@@ -1,0 +1,28 @@
+body {
+      font-family: 'Public Sans', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .font-headline {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .glass-panel {
+      background: rgba(253, 249, 241, 0.8);
+      backdrop-filter: blur(20px);
+    }
+
+    .gradient-text {
+      background: linear-gradient(45deg, #0f426f, #2e5a88);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .ambient-shadow {
+      box-shadow: 0 8px 32px rgba(28, 28, 23, 0.05);
+    }

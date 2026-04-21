@@ -1,0 +1,22 @@
+body {
+            font-family: 'Public Sans', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .font-headline {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .ambient-shadow {
+            box-shadow: 0 8px 32px rgba(28, 28, 23, 0.05);
+        }
+
+        .glass-panel {
+            background: rgba(253, 249, 241, 0.8);
+            backdrop-filter: blur(20px);
+        }

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Service Details - Sanad</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "outline": "#737780",
+            "on-secondary-container": "#496a4c",
+            "on-tertiary-fixed": "#2e1500",
+            "on-secondary-fixed": "#01210a",
+            "on-tertiary-container": "#ffc28d",
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#abd0ab",
+            "surface-container-low": "#f7f3ec",
+            "surface-container-highest": "#e6e2db",
+            "surface-container": "#f1ede6",
+            "tertiary-fixed": "#ffdcc1",
+            "surface-tint": "#35618f",
+            "background": "#fdf9f1",
+            "error": "#ba1a1a",
+            "inverse-on-surface": "#f4f0e9",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#d2e4ff",
+            "primary-container": "#2e5a88",
+            "on-error": "#ffffff",
+            "on-surface": "#1c1c17",
+            "surface-variant": "#e6e2db",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#dddad2",
+            "secondary-fixed": "#c6ecc6",
+            "on-primary-fixed": "#001d36",
+            "surface": "#fdf9f1",
+            "on-primary": "#ffffff",
+            "surface-container-high": "#ece8e0",
+            "surface-bright": "#fdf9f1",
+            "inverse-primary": "#a0cafe",
+            "tertiary-fixed-dim": "#f8ba83",
+            "on-primary-container": "#aed1ff",
+            "tertiary-container": "#7b4d20",
+            "secondary-container": "#c3e9c3",
+            "on-surface-variant": "#42474f",
+            "on-background": "#1c1c17",
+            "secondary": "#456648",
+            "outline-variant": "#c2c7d0",
+            "error-container": "#ffdad6",
+            "on-secondary": "#ffffff",
+            "primary": "#0f426f",
+            "tertiary": "#5f360b",
+            "on-secondary-fixed-variant": "#2d4e32",
+            "inverse-surface": "#31302c",
+            "primary-fixed-dim": "#a0cafe",
+            "on-tertiary-fixed-variant": "#673d11",
+            "on-primary-fixed-variant": "#194976"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "headline": ["Manrope", "sans-serif"],
+            "body": ["Public Sans", "sans-serif"],
+            "label": ["Public Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-background text-on-surface antialiased flex flex-col min-h-screen">
+
+  <main class="flex-grow w-full max-w-4xl mx-auto px-4 py-8 md:py-12 flex flex-col gap-12">
+    <!-- Caregiver Profile Hero Card -->
+    <section
+      class="bg-surface-container-lowest rounded-xl p-6 md:p-10 shadow-sm relative overflow-visible mt-12 md:mt-16">
+      <div class="flex flex-col md:flex-row gap-8 items-start relative z-10">
+        <!-- Asymmetric Image -->
+        <div class="-mt-16 md:-mt-20 shrink-0 relative">
+          <img alt="Caregiver profile portrait"
+            class="w-32 h-32 md:w-48 md:h-48 rounded-xl object-cover shadow-lg border-4 border-surface-container-lowest"
+            data-alt="Portrait of a friendly, professional female caregiver with a warm smile, wearing neat blue scrubs, softly lit in a bright, modern room"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSec1mOZQJIkTFDB15JQ1AtddbMhlrxLmXcihp6nfxHQYpa4MesGPb5nj4R9j14nnZnKL9yJhIFL9hS4yEvKoaPVnJ_X7_DCrYA3G4k2J9WAookff6g-b3KyQq3zAoT_ZAjL_Jw_tfWUX5-CbDwKQj1hlmGB3sPkzzcG1--cbGb6QeZC0RWIRr-4LQ6N2_XCG66-07DJD5ae9m2fENp_6D9YW_1tcrvz8b_OczsjiyBdSG0dZfXvgsdw6RHfxchN67koEp7iRMTkb2" />
+          <div
+            class="absolute -bottom-3 -right-3 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1 shadow-sm">
+            <span class="material-symbols-outlined text-[16px]"
+              style="font-variation-settings: 'FILL' 1;">verified</span> Verified
+          </div>
+        </div>
+        <div class="flex-grow">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+            <div>
+              <h1 class="text-3xl md:text-4xl font-extrabold font-headline tracking-tight text-primary mb-1">
+                Amina Rahman</h1>
+              <p class="text-on-surface-variant font-medium text-lg">Senior Care Specialist</p>
+            </div>
+            <div class="flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-xl">
+              <span class="material-symbols-outlined text-tertiary-fixed-dim"
+                style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="font-bold text-lg">4.9</span>
+              <span class="text-on-surface-variant text-sm">(124 reviews)</span>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="bg-surface-container py-1 px-3 rounded-md text-sm font-medium text-on-surface-variant">Dementia
+              Care</span>
+            <span class="bg-surface-container py-1 px-3 rounded-md text-sm font-medium text-on-surface-variant">Mobility
+              Support</span>
+            <span class="bg-surface-container py-1 px-3 rounded-md text-sm font-medium text-on-surface-variant">First
+              Aid Certified</span>
+          </div>
+          <p class="text-on-surface-variant leading-relaxed mb-6 max-w-2xl">
+            With over 8 years of experience in geriatric care, I provide compassionate and dignified support
+            for elderly individuals. My approach centers on maintaining independence while ensuring safety
+            and comfort in their own sanctuary.
+          </p>
+          <div class="flex items-end gap-2">
+            <span class="text-3xl font-extrabold font-headline text-primary">120 EGP</span>
+            <span class="text-on-surface-variant font-medium pb-1">/ hour</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Left Column: Details & Reviews -->
+      <div class="lg:col-span-2 flex flex-col gap-8">
+        <!-- Service Details -->
+        <section class="bg-surface-container-lowest rounded-xl p-6 md:p-8">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-6">Service Details</h2>
+          <h3 class="text-xl font-semibold mb-3">Elderly Assistance &amp; Companionship</h3>
+          <p class="text-on-surface-variant leading-relaxed mb-6">
+            Comprehensive non-medical care tailored for seniors. This service includes assistance with
+            activities of daily living (ADLs), medication reminders, meal preparation, light housekeeping,
+            and engaging companionship to support mental wellbeing.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="flex items-start gap-3 bg-surface-container-low p-4 rounded-xl">
+              <span class="material-symbols-outlined text-primary mt-0.5">medication</span>
+              <div>
+                <h4 class="font-semibold mb-1">Medication Management</h4>
+                <p class="text-sm text-on-surface-variant">Timely reminders and organizing weekly pill
+                  boxes.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 bg-surface-container-low p-4 rounded-xl">
+              <span class="material-symbols-outlined text-primary mt-0.5">restaurant</span>
+              <div>
+                <h4 class="font-semibold mb-1">Dietary Support</h4>
+                <p class="text-sm text-on-surface-variant">Preparing nutritious meals adhering to
+                  dietary restrictions.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Reviews -->
+        <section class="bg-surface-container-lowest rounded-xl p-6 md:p-8">
+          <div class="flex items-center justify-between mb-8">
+            <h2 class="text-2xl font-bold font-headline text-primary">Client Experiences</h2>
+            <button class="text-primary font-medium hover:underline flex items-center gap-1 text-sm">
+              Read all <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </button>
+          </div>
+          <div class="flex flex-col gap-6">
+            <div class="border-b border-surface-variant pb-6 last:border-0 last:pb-0">
+              <div class="flex justify-between items-start mb-3">
+                <div class="flex gap-3 items-center">
+                  <div
+                    class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-bold text-primary">
+                    FA</div>
+                  <div>
+                    <h4 class="font-semibold">Fatima Al-Sayed</h4>
+                    <p class="text-xs text-on-surface-variant">2 weeks ago</p>
+                  </div>
+                </div>
+                <div class="flex text-tertiary-fixed-dim">
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+              </div>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                Amina has been an absolute blessing for our family. She cares for my father with such
+                patience and dignity. He looks forward to her visits every day. Highly recommended for
+                anyone needing truly compassionate care.
+              </p>
+            </div>
+            <div class="border-b border-surface-variant pb-6 last:border-0 last:pb-0">
+              <div class="flex justify-between items-start mb-3">
+                <div class="flex gap-3 items-center">
+                  <div
+                    class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center font-bold text-primary">
+                    MH</div>
+                  <div>
+                    <h4 class="font-semibold">Mohammed H.</h4>
+                    <p class="text-xs text-on-surface-variant">1 month ago</p>
+                  </div>
+                </div>
+                <div class="flex text-tertiary-fixed-dim">
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[18px]">star_half</span>
+                </div>
+              </div>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                Very professional and punctual. She handled my mother's post-surgery recovery
+                excellently, managing her medications perfectly. Only wish we could book her for more
+                hours!
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Right Column: Booking Form (Sticky) -->
+      <div class="lg:col-span-1">
+        <div
+          class="bg-surface-container-lowest rounded-xl p-6 shadow-sm sticky top-24 border border-surface-variant/30">
+          <h2 class="text-xl font-bold font-headline text-primary mb-6">Schedule Service</h2>
+          <form class="flex flex-col gap-5">
+            <!-- Date Picker -->
+            <label for="date-picker" class="block cursor-pointer">
+              <span class="block text-sm font-semibold text-on-surface mb-2">Select Date</span>
+              <div class="relative">
+                <span
+                  class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">calendar_today</span>
+                <input id="date-picker" type="date" value="2026-04-19"
+                  class="w-full bg-surface-container-low border-b-2 border-outline-variant focus:border-primary border-t-0 border-l-0 border-r-0 rounded-t-md pl-10 pr-4 py-3 text-sm focus:ring-0 focus:outline-none transition-colors cursor-pointer [&::-webkit-calendar-picker-indicator]:absolute [&::-webkit-calendar-picker-indicator]:inset-0 [&::-webkit-calendar-picker-indicator]:w-full [&::-webkit-calendar-picker-indicator]:h-full [&::-webkit-calendar-picker-indicator]:opacity-0 [&::-webkit-calendar-picker-indicator]:cursor-pointer" />
+              </div>
+            </label>
+            <!-- Time Selection -->
+            <div>
+              <label class="block text-sm font-semibold text-on-surface mb-2">Start Time</label>
+              <div class="relative">
+                <span
+                  class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">schedule</span>
+                <select
+                  class="w-full bg-surface-container-low border-b-2 border-outline-variant focus:border-primary border-t-0 border-l-0 border-r-0 rounded-t-md px-10 py-3 text-sm focus:ring-0 transition-colors appearance-none">
+                  <!-- will be getted from provider API -->
+                  <option>09:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                  <option>01:00 PM</option>
+                </select>
+                <span
+                  class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+              </div>
+            </div>
+            <!-- Duration -->
+            <div>
+              <label class="block text-sm font-semibold text-on-surface mb-2">Duration</label>
+
+              <!-- Preset Options -->
+              <div class="grid grid-cols-3 gap-2 mb-2">
+                <label class="cursor-pointer">
+                  <input type="radio" name="duration" value="2" class="peer sr-only" checked />
+                  <div
+                    class="py-2 text-center border-2 border-transparent bg-surface-container peer-checked:border-primary peer-checked:text-primary peer-checked:bg-transparent font-medium rounded-lg text-sm text-on-surface-variant transition-colors">
+                    2 hrs
+                  </div>
+                </label>
+
+                <label class="cursor-pointer">
+                  <input type="radio" name="duration" value="4" class="peer sr-only" />
+                  <div
+                    class="py-2 text-center border-2 border-transparent bg-surface-container peer-checked:border-primary peer-checked:text-primary peer-checked:bg-transparent font-medium rounded-lg text-sm text-on-surface-variant transition-colors">
+                    4 hrs
+                  </div>
+                </label>
+
+                <label class="cursor-pointer">
+                  <input type="radio" name="duration" value="8" class="peer sr-only" />
+                  <div
+                    class="py-2 text-center border-2 border-transparent bg-surface-container peer-checked:border-primary peer-checked:text-primary peer-checked:bg-transparent font-medium rounded-lg text-sm text-on-surface-variant transition-colors">
+                    8 hrs
+                  </div>
+                </label>
+              </div>
+
+              <!-- Custom Input Row -->
+              <label class="cursor-pointer block" for="custom-duration">
+                <input type="radio" name="duration" value="custom" class="peer sr-only" />
+                <div class="relative peer-checked:[&>input[type=number]]:border-primary">
+                  <div
+                    class="py-2 px-4 flex items-center justify-between border-2 border-transparent bg-surface-container peer-checked:border-primary rounded-lg transition-colors">
+                    <span class="text-sm font-medium text-on-surface-variant peer-checked:text-primary">Custom</span>
+                    <div class="flex items-center gap-1">
+                      <input type="number" min="1" max="24" placeholder="" id="custom-duration"
+                        class="w-16 h-full bg-transparent text-sm text-center focus:outline-none text-on-surface-variant"
+                        onclick="this.closest('label').querySelector('input[type=radio]').checked = true" />
+                      <span class="text-xs text-on-surface-variant">hrs</span>
+                    </div>
+                  </div>
+                </div>
+              </label>
+
+            </div>
+            <hr class="border-surface-variant my-2" />
+            <!-- Summary -->
+            <div class="flex flex-col gap-2 mb-2">
+              <div class="flex justify-between text-sm text-on-surface-variant">
+                <span>120 EGP x 2 hours</span>
+                <span>240 EGP</span>
+              </div>
+              <div class="flex justify-between text-sm text-on-surface-variant">
+                <span>Platform Trust Fee</span>
+                <span>15 EGP</span>
+              </div>
+              <div
+                class="flex justify-between font-bold text-lg text-primary mt-2 pt-4 border-t border-surface-variant">
+                <span>Total Cost</span>
+                <span>255 EGP</span>
+              </div>
+            </div>
+            <!-- CTA -->
+            <div class="mt-2">
+              <button
+                class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-4 rounded-full font-bold text-sm tracking-wide shadow-md hover:opacity-90 transition-opacity"
+                type="submit">
+                Book and Pay
+              </button>
+              <p class="text-xs text-center text-on-surface-variant mt-3 flex items-center justify-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">lock</span>
+                Funds held securely until service completion.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

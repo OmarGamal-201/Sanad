@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Login - Sanad Platform</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "inverse-on-surface": "#f4f0e9",
+            "tertiary": "#5f360b",
+            "on-secondary": "#ffffff",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#d2e4ff",
+            "on-tertiary-container": "#ffc28d",
+            "on-primary-fixed-variant": "#194976",
+            "on-background": "#1c1c17",
+            "surface-container-highest": "#e6e2db",
+            "on-surface-variant": "#42474f",
+            "on-error-container": "#93000a",
+            "tertiary-fixed-dim": "#f8ba83",
+            "secondary-fixed": "#c6ecc6",
+            "tertiary-fixed": "#ffdcc1",
+            "surface-container-low": "#f7f3ec",
+            "primary-fixed-dim": "#a0cafe",
+            "inverse-primary": "#a0cafe",
+            "secondary-container": "#c3e9c3",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "primary-container": "#2e5a88",
+            "on-tertiary": "#ffffff",
+            "on-primary-container": "#aed1ff",
+            "background": "#fdf9f1",
+            "surface": "#fdf9f1",
+            "outline-variant": "#c2c7d0",
+            "outline": "#737780",
+            "tertiary-container": "#7b4d20",
+            "surface-bright": "#fdf9f1",
+            "secondary-fixed-dim": "#abd0ab",
+            "on-tertiary-fixed": "#2e1500",
+            "surface-container-high": "#ece8e0",
+            "surface-dim": "#dddad2",
+            "surface-container-lowest": "#ffffff",
+            "surface-container": "#f1ede6",
+            "secondary": "#456648",
+            "on-surface": "#1c1c17",
+            "surface-variant": "#e6e2db",
+            "primary": "#0f426f",
+            "on-primary-fixed": "#001d36",
+            "on-secondary-fixed": "#01210a",
+            "on-secondary-fixed-variant": "#2d4e32",
+            "on-secondary-container": "#496a4c",
+            "on-primary": "#ffffff",
+            "inverse-surface": "#31302c",
+            "surface-tint": "#35618f",
+            "on-tertiary-fixed-variant": "#673d11"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {},
+          "fontFamily": {
+            "headline": ["Manrope", "sans-serif"],
+            "body": ["Public Sans", "sans-serif"],
+            "label": ["Public Sans", "sans-serif"]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .bg-gradient-primary {
+      background: linear-gradient(45deg, #0f426f, #2e5a88);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-surface text-on-surface font-body antialiased min-h-screen flex flex-col justify-center items-center relative overflow-hidden">
+
+  <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+    <div
+      class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-surface-container-highest rounded-full blur-[100px] opacity-40">
+    </div>
+    <div
+      class="absolute bottom-[-10%] right-[-10%] w-[60%] h-[60%] bg-surface-container rounded-full blur-[120px] opacity-50">
+    </div>
+  </div>
+
+  <main class="w-full max-w-md px-6 py-12 z-10">
+    <!-- Brand Header -->
+    <div class="mb-12 text-center">
+      <h1 class="font-headline font-extrabold text-4xl text-primary tracking-tighter mb-2">Sanad</h1>
+      <p class="font-body text-on-surface-variant text-sm">Your Sanctuary of Support</p>
+    </div>
+
+    <!-- Login Card -->
+    <div class="bg-surface-container-lowest rounded-xl p-8 pb-10">
+      <h2 class="font-headline text-2xl font-bold text-on-surface mb-8 tracking-tight">Welcome Back</h2>
+
+      <!-- Error Message -->
+      <div *ngIf="errorMessage"
+        class="mb-4 px-4 py-3 rounded-lg bg-error-container text-on-error-container text-sm font-body">
+        {{ errorMessage }}
+      </div>
+
+      <form (ngSubmit)="onSubmit()" #loginForm="ngForm" class="space-y-6">
+
+        <!-- Email Input -->
+        <div class="relative">
+          <label class="sr-only" for="email">Email Address</label>
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <span class="material-symbols-outlined text-outline-variant text-xl">mail</span>
+          </div>
+          <input [(ngModel)]="email" name="email" id="email" type="email" placeholder="Email Address" required
+            class="w-full pl-10 pr-4 py-3 bg-transparent border-0 border-b-2 border-outline-variant text-on-surface placeholder-outline-variant font-body text-base focus:ring-0 focus:border-primary focus:bg-surface-container-low transition-colors duration-200" />
+        </div>
+
+        <!-- Password Input -->
+        <div class="relative">
+          <label class="sr-only" for="password">Password</label>
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <span class="material-symbols-outlined text-outline-variant text-xl">lock</span>
+          </div>
+          <input [(ngModel)]="password" name="password" id="password" [type]="showPassword ? 'text' : 'password'"
+            placeholder="Password" required
+            class="w-full pl-10 pr-12 py-3 bg-transparent border-0 border-b-2 border-outline-variant text-on-surface placeholder-outline-variant font-body text-base focus:ring-0 focus:border-primary focus:bg-surface-container-low transition-colors duration-200" />
+          <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+            <button (click)="togglePasswordVisibility()" type="button"
+              class="text-outline-variant hover:text-on-surface-variant focus:outline-none">
+              <span class="material-symbols-outlined text-xl">
+                {{ showPassword ? 'visibility' : 'visibility_off' }}
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Options Row -->
+        <div class="flex items-center justify-between pt-2">
+          <div class="flex items-center">
+            <input [(ngModel)]="rememberMe" name="rememberMe" id="remember-me" type="checkbox"
+              class="h-4 w-4 rounded border-outline-variant text-primary focus:ring-primary focus:ring-offset-surface bg-transparent" />
+            <label class="ml-2 block text-sm font-body text-on-surface-variant" for="remember-me">
+              Remember me
+            </label>
+          </div>
+          <div class="text-sm">
+            <a class="font-body font-medium text-primary hover:text-primary-container transition-colors" href="#">
+              Forgot password?
+            </a>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="pt-4">
+          <button type="submit" [disabled]="isLoading"
+            class="w-full flex justify-center py-3 px-4 rounded-full bg-gradient-primary text-on-primary font-headline font-bold text-sm tracking-wide shadow-[0_8px_32px_rgba(28,28,23,0.05)] hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-surface-container-lowest disabled:opacity-60 disabled:cursor-not-allowed">
+            <span *ngIf="!isLoading">Log In</span>
+            <span *ngIf="isLoading" class="flex items-center gap-2">
+              <svg class="animate-spin h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+              </svg>
+              Logging in...
+            </span>
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- Register Link -->
+    <div class="mt-8 text-center">
+      <p class="font-body text-sm text-on-surface-variant">
+        Don't have an account?
+        <a routerLink="/register"
+          class="font-headline font-bold text-primary hover:text-primary-container ml-1 border-b border-transparent hover:border-primary transition-all">
+          Register here
+        </a>
+      </p>
+    </div>
+  </main>
+
+</body>
+
+</html>

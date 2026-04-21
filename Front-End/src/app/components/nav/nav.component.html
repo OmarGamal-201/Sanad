@@ -1,0 +1,71 @@
+<header
+  class="sticky top-0 z-50 w-full bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-xl no-border shadow-sm shadow-blue-900/5 transition-all duration-300">
+  <div class="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
+
+    <a routerLink="/"
+      class="text-2xl font-extrabold tracking-tighter text-blue-900 dark:text-blue-300 font-headline cursor-pointer">
+      Sanad
+    </a>
+
+    <nav class="hidden md:flex gap-8 items-center">
+      <a (click)="navigateToHome(); toggleMobileMenu()"
+        class="cursor-pointer text-on-surface font-medium text-base font-body">
+        Home
+      </a>
+      <a routerLink="/services" routerLinkActive="border-b-2 border-primary text-primary"
+        class="text-stone-500 dark:text-stone-400 font-medium hover:text-primary dark:hover:text-blue-200 transition-colors duration-300 text-sm font-body pb-1">
+        Services
+      </a>
+      <a routerLink="/caregivers" routerLinkActive="border-b-2 border-primary text-primary"
+        class="text-stone-500 dark:text-stone-400 font-medium hover:text-primary dark:hover:text-blue-200 transition-colors duration-300 text-sm font-body pb-1">
+        Our Caregivers
+      </a>
+    </nav>
+
+    <div class="hidden md:flex items-center gap-4">
+      <button routerLink="/login"
+        class="text-primary hover:bg-surface-container-highest px-4 py-2 rounded-full font-label text-sm font-medium transition-colors">
+        Login
+      </button>
+      <button routerLink="/register"
+        class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-label text-sm font-semibold hover:opacity-90 transition-opacity ambient-shadow">
+        Join Sanad
+      </button>
+      <div class="flex gap-2">
+        <button class="text-stone-500 hover:text-primary transition-colors">
+          <span class="material-symbols-outlined">language</span>
+        </button>
+        <button class="text-stone-500 hover:text-primary transition-colors">
+          <span class="material-symbols-outlined">notifications</span>
+        </button>
+      </div>
+    </div>
+
+    <button (click)="toggleMobileMenu()" class="md:hidden text-primary focus:outline-none">
+      <span class="material-symbols-outlined">{{ isMobileMenuOpen ? 'close' : 'menu' }}</span>
+    </button>
+  </div>
+
+  <div *ngIf="isMobileMenuOpen"
+    class="md:hidden bg-surface border-t border-outline-variant/20 absolute w-full left-0 shadow-lg">
+    <nav class="flex flex-col px-6 py-4 gap-4">
+      <a routerLink="/home" (click)="toggleMobileMenu()"
+        class="text-on-surface font-medium text-base font-body">Home</a>
+      <a routerLink="/services" (click)="toggleMobileMenu()"
+        class="text-on-surface font-medium text-base font-body">Services</a>
+      <a routerLink="/caregivers" (click)="toggleMobileMenu()"
+        class="text-on-surface font-medium text-base font-body">Our Caregivers</a>
+      <hr class="border-outline-variant/20 my-2">
+      <div class="flex flex-col gap-3">
+        <button routerLink="/login" (click)="toggleMobileMenu()"
+          class="w-full text-center text-primary border border-primary px-4 py-2 rounded-full font-label text-sm font-medium">
+          Login
+        </button>
+        <button routerLink="/register" (click)="toggleMobileMenu()"
+          class="w-full text-center bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-label text-sm font-semibold">
+          Join Sanad
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>

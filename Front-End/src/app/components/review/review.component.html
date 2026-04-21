@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Review &amp; Rating - Sanad</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "inverse-on-surface": "#f4f0e9",
+            "tertiary": "#5f360b",
+            "on-secondary": "#ffffff",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#d2e4ff",
+            "on-tertiary-container": "#ffc28d",
+            "on-primary-fixed-variant": "#194976",
+            "on-background": "#1c1c17",
+            "surface-container-highest": "#e6e2db",
+            "on-surface-variant": "#42474f",
+            "on-error-container": "#93000a",
+            "tertiary-fixed-dim": "#f8ba83",
+            "secondary-fixed": "#c6ecc6",
+            "tertiary-fixed": "#ffdcc1",
+            "surface-container-low": "#f7f3ec",
+            "primary-fixed-dim": "#a0cafe",
+            "inverse-primary": "#a0cafe",
+            "secondary-container": "#c3e9c3",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "primary-container": "#2e5a88",
+            "on-tertiary": "#ffffff",
+            "on-primary-container": "#aed1ff",
+            "background": "#fdf9f1",
+            "surface": "#fdf9f1",
+            "outline-variant": "#c2c7d0",
+            "outline": "#737780",
+            "tertiary-container": "#7b4d20",
+            "surface-bright": "#fdf9f1",
+            "secondary-fixed-dim": "#abd0ab",
+            "on-tertiary-fixed": "#2e1500",
+            "surface-container-high": "#ece8e0",
+            "surface-dim": "#dddad2",
+            "surface-container-lowest": "#ffffff",
+            "surface-container": "#f1ede6",
+            "secondary": "#456648",
+            "on-surface": "#1c1c17",
+            "surface-variant": "#e6e2db",
+            "primary": "#0f426f",
+            "on-primary-fixed": "#001d36",
+            "on-secondary-fixed": "#01210a",
+            "on-secondary-fixed-variant": "#2d4e32",
+            "on-secondary-container": "#496a4c",
+            "on-primary": "#ffffff",
+            "inverse-surface": "#31302c",
+            "surface-tint": "#35618f",
+            "on-tertiary-fixed-variant": "#673d11"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {},
+          "fontFamily": {
+            "headline": ["Manrope"],
+            "body": ["Public Sans"],
+            "label": ["Public Sans"]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-background text-on-surface min-h-screen flex flex-col pb-24 md:pb-0 pt-[72px]">
+
+  <main class="flex-grow max-w-3xl w-full mx-auto px-6 py-8 flex flex-col gap-8">
+    <!-- Header Section -->
+    <div class="text-center space-y-4">
+      <h1 class="font-headline text-3xl md:text-4xl font-bold tracking-tight text-primary">How was your
+        experience?</h1>
+      <p class="text-on-surface-variant max-w-lg mx-auto">Your feedback helps us maintain the quality of care and
+        supports our caregivers in providing the best service.</p>
+    </div>
+    <!-- Service Summary Card -->
+    <div class="bg-surface-container-lowest rounded-xl p-6 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5 pointer-events-none"
+        style="background-image: linear-gradient(45deg, var(--tw-colors-primary), var(--tw-colors-primary-container));">
+      </div>
+      <div class="relative z-10 flex flex-col md:flex-row items-center md:items-start gap-6">
+        <div
+          class="w-24 h-24 rounded-full overflow-hidden shrink-0 border-4 border-surface shadow-[0_8px_32px_rgba(0,0,0,0.05)]">
+          <img alt="Caregiver profile" class="w-full h-full object-cover"
+            data-alt="close-up portrait of a warm, smiling professional female caregiver in her 40s wearing neat scrubs, soft natural lighting"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLuHPtCx91yqpEXZ5cUa-hnH4_94kv9WMFaaZHsIxKSmW_4JoX_T7Vci1VfBEE4wpkpDZH49uRArW_uYxdE0lxp2rYD9L-ZlTZVqlh7IPE5h3ACgU3AlrsS5DDgf-B2rDeJQzQIuzN-K01KnYEZUq3wPehekhs8jZFkQtzVEzULJpAn46T6Mrbv8MMXalTbZFlvbo7FmoTpslUULg55Fc8S1Zs63USjKNALQLqGIb3FVr9k5b0VkFJD4xyfrdYceXpdA3TaDFhuyWU" />
+        </div>
+        <div class="flex-grow text-center md:text-left">
+          <h2 class="font-headline text-2xl font-semibold text-primary">Aisha Rahman</h2>
+          <p class="text-on-surface-variant font-medium mt-1">Elderly Care &amp; Companionship</p>
+          <div class="flex flex-wrap justify-center md:justify-start gap-3 mt-4">
+            <span
+              class="inline-flex items-center gap-1 px-3 py-1 bg-surface-container-high rounded-full text-sm font-medium">
+              <span class="material-symbols-outlined text-[18px]">calendar_today</span> Oct 24, 2023
+            </span>
+            <span
+              class="inline-flex items-center gap-1 px-3 py-1 bg-surface-container-high rounded-full text-sm font-medium">
+              <span class="material-symbols-outlined text-[18px]">schedule</span> 4 Hours
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Rating Section -->
+    <div class="bg-surface-container-low rounded-xl p-8 flex flex-col items-center">
+      <h3 class="font-headline text-xl font-medium mb-6">Rate your service</h3>
+      <div class="flex flex-row-reverse gap-2 group/stars">
+
+        <label class="cursor-pointer text-outline-variant
+      hover:text-tertiary-fixed-dim
+      [&:hover~label]:text-tertiary-fixed-dim
+      has-[:checked]:text-tertiary-fixed-dim
+      [&:has(~label:has(:checked))]:text-tertiary-fixed-dim
+      group-hover/stars:has-[:checked]:text-tertiary-fixed-dim
+      group-hover/stars:[&:has(~label:has(:checked))]:text-tertiary-fixed-dim
+      transition-colors">
+          <input type="radio" name="rating" value="5" class="sr-only" />
+          <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+        </label>
+
+        <label class="cursor-pointer text-outline-variant
+      hover:text-tertiary-fixed-dim
+      [&:hover~label]:text-tertiary-fixed-dim
+      has-[:checked]:text-tertiary-fixed-dim
+      [&:has(~label:has(:checked))]:text-tertiary-fixed-dim
+      group-hover/stars:has-[:checked]:text-tertiary-fixed-dim
+      group-hover/stars:[&:has(~label:has(:checked))]:text-tertiary-fixed-dim
+      transition-colors">
+          <input type="radio" name="rating" value="4" class="sr-only" />
+          <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+        </label>
+
+        <label class="cursor-pointer text-outline-variant
+      hover:text-tertiary-fixed-dim
+      [&:hover~label]:text-tertiary-fixed-dim
+      has-[:checked]:text-tertiary-fixed-dim
+      [&:has(~label:has(:checked))]:text-tertiary-fixed-dim
+      group-hover/stars:has-[:checked]:text-tertiary-fixed-dim
+      group-hover/stars:[&:has(~label:has(:checked))]:text-tertiary-fixed-dim
+      transition-colors">
+          <input type="radio" name="rating" value="3" class="sr-only" />
+          <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+        </label>
+
+        <label class="cursor-pointer text-outline-variant
+      hover:text-tertiary-fixed-dim
+      [&:hover~label]:text-tertiary-fixed-dim
+      has-[:checked]:text-tertiary-fixed-dim
+      [&:has(~label:has(:checked))]:text-tertiary-fixed-dim
+      group-hover/stars:has-[:checked]:text-tertiary-fixed-dim
+      group-hover/stars:[&:has(~label:has(:checked))]:text-tertiary-fixed-dim
+      transition-colors">
+          <input type="radio" name="rating" value="2" class="sr-only" />
+          <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+        </label>
+
+        <label class="cursor-pointer text-outline-variant
+      hover:text-tertiary-fixed-dim
+      [&:hover~label]:text-tertiary-fixed-dim
+      has-[:checked]:text-tertiary-fixed-dim
+      [&:has(~label:has(:checked))]:text-tertiary-fixed-dim
+      group-hover/stars:has-[:checked]:text-tertiary-fixed-dim
+      group-hover/stars:[&:has(~label:has(:checked))]:text-tertiary-fixed-dim
+      transition-colors">
+          <input type="radio" name="rating" value="1" class="sr-only" />
+          <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+        </label>
+
+      </div>
+    </div>
+    <!-- Feedback Form -->
+    <form class="space-y-6">
+      <div class="space-y-2">
+        <label class="font-headline font-semibold text-lg" for="feedback">Share your thoughts (Optional)</label>
+        <textarea
+          class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant rounded-t-lg px-4 py-3 focus:ring-0 focus:border-primary focus:bg-surface-container-low transition-colors resize-none placeholder-outline"
+          id="feedback" placeholder="What did you appreciate about Aisha's care?" rows="4"></textarea>
+      </div>
+      <button
+        class="w-full py-4 rounded-full font-headline font-bold text-lg text-on-primary shadow-[0_8px_32px_rgba(28,28,23,0.05)] hover:opacity-90 transition-opacity"
+        style="background-image: linear-gradient(45deg, var(--tw-colors-primary), var(--tw-colors-primary-container));"
+        type="submit">
+        Submit Review
+      </button>
+      <div class="text-center">
+        <button class="text-primary font-medium hover:underline py-2" type="button">Skip for now</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
+
+<!-- Making Stars still gold after choose one -->

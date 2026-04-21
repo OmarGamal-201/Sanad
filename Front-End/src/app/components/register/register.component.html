@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Register - Sanad</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "inverse-on-surface": "#f4f0e9",
+            "tertiary": "#5f360b",
+            "on-secondary": "#ffffff",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#d2e4ff",
+            "on-tertiary-container": "#ffc28d",
+            "on-primary-fixed-variant": "#194976",
+            "on-background": "#1c1c17",
+            "surface-container-highest": "#e6e2db",
+            "on-surface-variant": "#42474f",
+            "on-error-container": "#93000a",
+            "tertiary-fixed-dim": "#f8ba83",
+            "secondary-fixed": "#c6ecc6",
+            "tertiary-fixed": "#ffdcc1",
+            "surface-container-low": "#f7f3ec",
+            "primary-fixed-dim": "#a0cafe",
+            "inverse-primary": "#a0cafe",
+            "secondary-container": "#c3e9c3",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "primary-container": "#2e5a88",
+            "on-tertiary": "#ffffff",
+            "on-primary-container": "#aed1ff",
+            "background": "#fdf9f1",
+            "surface": "#fdf9f1",
+            "outline-variant": "#c2c7d0",
+            "outline": "#737780",
+            "tertiary-container": "#7b4d20",
+            "surface-bright": "#fdf9f1",
+            "secondary-fixed-dim": "#abd0ab",
+            "on-tertiary-fixed": "#2e1500",
+            "surface-container-high": "#ece8e0",
+            "surface-dim": "#dddad2",
+            "surface-container-lowest": "#ffffff",
+            "surface-container": "#f1ede6",
+            "secondary": "#456648",
+            "on-surface": "#1c1c17",
+            "surface-variant": "#e6e2db",
+            "primary": "#0f426f",
+            "on-primary-fixed": "#001d36",
+            "on-secondary-fixed": "#01210a",
+            "on-secondary-fixed-variant": "#2d4e32",
+            "on-secondary-container": "#496a4c",
+            "on-primary": "#ffffff",
+            "inverse-surface": "#31302c",
+            "surface-tint": "#35618f",
+            "on-tertiary-fixed-variant": "#673d11"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "headline": ["Manrope", "sans-serif"],
+            "body": ["Public Sans", "sans-serif"],
+            "label": ["Public Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-surface text-on-surface min-h-screen antialiased flex flex-col md:flex-row">
+  <div class="bg-surface text-on-surface min-h-screen antialiased flex flex-col md:flex-row w-full">
+
+    <div class="hidden md:flex md:w-1/2 relative bg-surface-container-low overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkjIloW5-MRbsrURxeWIdW9o9-D34aYSV_6TJrIFgVz9b2s5ynbhTjaUrZj60H3fWJCnDkahQAs2RA9fI9fp-SZG6OqKrfaq1VOgrhkbnJhC3g3TjZJs51GOTKC74O08lC-hD52vhQFH67UiY37MYLtT2gVHa2MK2OBvVV-KU_Nmx9FsDDXfkBpfRvIprO75eo7Q48cDplxnn-pwPr2z_8n8tDdLktohNRkGiKMzjm4jBT3Ek-KFA_hkHN9Iv3s_nExtGmk8A-yW4_" alt="Supportive hands"
+          class="w-full h-full object-cover opacity-90 mix-blend-multiply" />
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-tr from-primary/80 to-primary-container/40 z-10 mix-blend-multiply">
+      </div>
+      <div class="relative z-20 flex flex-col justify-end p-12 lg:p-20 text-on-primary h-full w-full">
+        <h1 class="font-headline text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+          Your sanctuary <br />of care.
+        </h1>
+        <p class="font-body text-xl opacity-90 max-w-md leading-relaxed">
+          Join a community built on trust, empathy, and professional excellence.
+        </p>
+      </div>
+    </div>
+
+    <div class="w-full md:w-1/2 flex flex-col min-h-screen overflow-y-auto">
+
+      <div class="flex justify-between items-center p-6 md:p-12 w-full max-w-2xl mx-auto">
+        <div class="font-headline text-2xl font-extrabold text-primary tracking-tighter">Sanad</div>
+        <a routerLink="/login"
+          class="font-body text-sm text-primary hover:text-primary-container transition-colors flex items-center gap-1 font-semibold">
+          Sign In
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="flex-grow flex flex-col justify-center px-6 md:px-12 w-full max-w-2xl mx-auto pb-12">
+        <div class="mb-10">
+          <h2 class="font-headline text-3xl md:text-4xl font-bold tracking-tight text-on-surface mb-3">
+            Create an account
+          </h2>
+          <p class="font-body text-on-surface-variant text-base">Select how you want to join our community.</p>
+        </div>
+
+        <div *ngIf="errorMessage" class="mb-6 px-4 py-3 rounded-lg bg-error-container text-on-error-container text-sm font-body">
+          {{ errorMessage }}
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+          <div (click)="selectRole('client')" class="relative cursor-pointer group">
+            <div [class.border-primary]="role === 'client'" [class.bg-primary-container]="role === 'client'"
+              [class.border-transparent]="role !== 'client'"
+              class="h-full bg-surface-container-low rounded-xl p-6 border-2 transition-all duration-200">
+              <div class="flex items-center justify-between mb-4">
+                <span class="material-symbols-outlined text-3xl text-primary font-light">home_health</span>
+                <div [class.border-primary]="role === 'client'" [class.bg-primary]="role === 'client'"
+                  [class.border-outline-variant]="role !== 'client'"
+                  class="w-6 h-6 rounded-full border-2 flex items-center justify-center transition-colors">
+                  <span *ngIf="role === 'client'" class="material-symbols-outlined text-on-primary text-[14px]">check</span>
+                </div>
+              </div>
+              <h3 class="font-headline text-lg font-bold text-on-surface mb-1">Seeking Care</h3>
+              <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                I am looking for support and professional services.
+              </p>
+            </div>
+          </div>
+
+          <div (click)="selectRole('provider')" class="relative cursor-pointer group">
+            <div [class.border-primary]="role === 'provider'" [class.bg-primary-container]="role === 'provider'"
+              [class.border-transparent]="role !== 'provider'"
+              class="h-full bg-surface-container-low rounded-xl p-6 border-2 transition-all duration-200">
+              <div class="flex items-center justify-between mb-4">
+                <span class="material-symbols-outlined text-3xl text-primary font-light">medical_services</span>
+                <div [class.border-primary]="role === 'provider'" [class.bg-primary]="role === 'provider'"
+                  [class.border-outline-variant]="role !== 'provider'"
+                  class="w-6 h-6 rounded-full border-2 flex items-center justify-center transition-colors">
+                  <span *ngIf="role === 'provider'" class="material-symbols-outlined text-on-primary text-[14px]">check</span>
+                </div>
+              </div>
+              <h3 class="font-headline text-lg font-bold text-on-surface mb-1">Offering Care</h3>
+              <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                I am a professional offering my services.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <form (ngSubmit)="onSubmit()" #registerForm="ngForm" class="space-y-6">
+
+          <div class="relative">
+            <input [(ngModel)]="name" name="name" id="fullName" type="text" placeholder=" " required
+              class="block w-full px-0 py-3 text-base font-body text-on-surface bg-transparent border-0 border-b-2 border-outline-variant appearance-none focus:outline-none focus:ring-0 focus:border-primary transition-colors peer" />
+            <label for="fullName"
+              class="absolute text-sm font-label text-on-surface-variant duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:text-primary">
+              Full Name
+            </label>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="relative">
+              <input [(ngModel)]="email" name="email" id="email" type="email" placeholder=" " required
+                class="block w-full px-0 py-3 text-base font-body text-on-surface bg-transparent border-0 border-b-2 border-outline-variant appearance-none focus:outline-none focus:ring-0 focus:border-primary transition-colors peer" />
+              <label for="email"
+                class="absolute text-sm font-label text-on-surface-variant duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:text-primary">
+                Email Address
+              </label>
+            </div>
+            <div class="relative">
+              <input [(ngModel)]="phone" name="phone" id="phone" type="tel" placeholder=" " required
+                class="block w-full px-0 py-3 text-base font-body text-on-surface bg-transparent border-0 border-b-2 border-outline-variant appearance-none focus:outline-none focus:ring-0 focus:border-primary transition-colors peer" />
+              <label for="phone"
+                class="absolute text-sm font-label text-on-surface-variant duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:text-primary">
+                Phone Number
+              </label>
+            </div>
+          </div>
+
+          <div class="relative">
+            <input [(ngModel)]="password" name="password" id="password" [type]="showPassword ? 'text' : 'password'"
+              placeholder=" " required
+              class="block w-full px-0 py-3 text-base font-body text-on-surface bg-transparent border-0 border-b-2 border-outline-variant appearance-none focus:outline-none focus:ring-0 focus:border-primary transition-colors peer" />
+            <label for="password"
+              class="absolute text-sm font-label text-on-surface-variant duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:text-primary">
+              Password
+            </label>
+            <button (click)="togglePasswordVisibility()" type="button"
+              class="absolute right-0 top-3 text-on-surface-variant focus:outline-none">
+              <span class="material-symbols-outlined text-xl">
+                {{ showPassword ? 'visibility' : 'visibility_off' }}
+              </span>
+            </button>
+          </div>
+
+          <div class="pt-4">
+            <h3 class="font-headline text-lg font-bold text-on-surface mb-4">Address Details</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+              <div class="relative">
+                <input [(ngModel)]="address.governrate" name="governrate" id="governrate" type="text" placeholder=" " required
+                  class="block w-full px-0 py-3 text-base font-body text-on-surface bg-transparent border-0 border-b-2 border-outline-variant appearance-none focus:outline-none focus:ring-0 focus:border-primary transition-colors peer" />
+                <label for="governrate"
+                  class="absolute text-sm font-label text-on-surface-variant duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:text-primary">
+                  Governorate
+                </label>
+              </div>
+              <div class="relative">
+                <input [(ngModel)]="address.city" name="city" id="city" type="text" placeholder=" " required
+                  class="block w-full px-0 py-3 text-base font-body text-on-surface bg-transparent border-0 border-b-2 border-outline-variant appearance-none focus:outline-none focus:ring-0 focus:border-primary transition-colors peer" />
+                <label for="city"
+                  class="absolute text-sm font-label text-on-surface-variant duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:text-primary">
+                  City
+                </label>
+              </div>
+            </div>
+            <div class="relative">
+              <input [(ngModel)]="address.street" name="street" id="street" type="text" placeholder=" " required
+                class="block w-full px-0 py-3 text-base font-body text-on-surface bg-transparent border-0 border-b-2 border-outline-variant appearance-none focus:outline-none focus:ring-0 focus:border-primary transition-colors peer" />
+              <label for="street"
+                class="absolute text-sm font-label text-on-surface-variant duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 peer-focus:text-primary">
+                Street Address
+              </label>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-8 border-t border-outline-variant/30 grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+            <div>
+              <h3 class="font-headline text-lg font-bold text-on-surface mb-2">Profile Photo</h3>
+              <p class="font-body text-xs text-on-surface-variant mb-4">
+                Upload a clear photo of your face.
+              </p>
+              <label for="photo-upload"
+                class="bg-surface-container-lowest border border-outline-variant/50 border-dashed rounded-xl p-6 text-center flex flex-col items-center justify-center group hover:bg-surface-container-low transition-colors cursor-pointer h-40">
+                <ng-container *ngIf="photoPreviewUrl; else defaultPhotoIcon">
+                  <img [src]="photoPreviewUrl" alt="Photo Preview"
+                    class="w-16 h-16 object-cover rounded-full mb-3 border-2 border-primary" />
+                  <span class="font-body text-xs font-semibold text-primary">Change Photo</span>
+                </ng-container>
+                <ng-template #defaultPhotoIcon>
+                  <div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mb-3 group-hover:scale-105 transition-transform">
+                    <span class="material-symbols-outlined text-xl">account_circle</span>
+                  </div>
+                  <span class="font-body text-xs font-semibold text-primary mb-1">Tap to upload</span>
+                </ng-template>
+                <input id="photo-upload" type="file" accept="image/*" class="hidden" (change)="onPhotoSelected($event)" />
+              </label>
+            </div>
+
+            <div>
+              <h3 class="font-headline text-lg font-bold text-on-surface mb-2">Identity Verification</h3>
+              <p class="font-body text-xs text-on-surface-variant mb-4">
+                Upload a clear photo of your ID card.
+              </p>
+              <label for="id-upload"
+                class="bg-surface-container-lowest border border-outline-variant/50 border-dashed rounded-xl p-6 text-center flex flex-col items-center justify-center group hover:bg-surface-container-low transition-colors cursor-pointer h-40">
+                <ng-container *ngIf="previewUrl; else defaultIdIcon">
+                  <img [src]="previewUrl" alt="ID Preview"
+                    class="w-24 h-16 object-cover rounded-lg mb-3 border border-outline-variant" />
+                  <span class="font-body text-xs font-semibold text-primary">Change ID photo</span>
+                </ng-container>
+                <ng-template #defaultIdIcon>
+                  <div class="w-12 h-12 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mb-3 group-hover:scale-105 transition-transform">
+                    <span class="material-symbols-outlined text-xl">badge</span>
+                  </div>
+                  <span class="font-body text-xs font-semibold text-primary mb-1">Tap to upload ID</span>
+                </ng-template>
+                <input id="id-upload" type="file" accept="image/*" class="hidden" (change)="onFileSelected($event)" />
+              </label>
+            </div>
+
+          </div>
+
+          <div class="mt-10 pt-4">
+            <button type="submit" [disabled]="isLoading"
+              class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-full py-4 px-8 font-headline text-sm font-bold tracking-wide hover:opacity-95 transition-opacity flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed">
+              <span *ngIf="!isLoading">
+                Create Account
+                <span class="material-symbols-outlined text-lg align-middle ml-1">arrow_forward</span>
+              </span>
+              <span *ngIf="isLoading" class="flex items-center gap-2">
+                <svg class="animate-spin h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+                </svg>
+                Creating account...
+              </span>
+            </button>
+            <p class="text-center font-body text-xs text-on-surface-variant mt-4">
+              By registering, you agree to our
+              <a class="text-primary underline hover:text-primary-container" href="#">Terms of Service</a> and
+              <a class="text-primary underline hover:text-primary-container" href="#">Privacy Policy</a>.
+            </p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

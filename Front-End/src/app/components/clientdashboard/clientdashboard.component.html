@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sanad - Client Dashboard</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&amp;family=Public+Sans:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind Config -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#737780",
+                        "on-secondary-container": "#496a4c",
+                        "on-tertiary-fixed": "#2e1500",
+                        "on-secondary-fixed": "#01210a",
+                        "on-tertiary-container": "#ffc28d",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#abd0ab",
+                        "surface-container-low": "#f7f3ec",
+                        "surface-container-highest": "#e6e2db",
+                        "surface-container": "#f1ede6",
+                        "tertiary-fixed": "#ffdcc1",
+                        "surface-tint": "#35618f",
+                        "background": "#fdf9f1",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f4f0e9",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#d2e4ff",
+                        "primary-container": "#2e5a88",
+                        "on-error": "#ffffff",
+                        "on-surface": "#1c1c17",
+                        "surface-variant": "#e6e2db",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#dddad2",
+                        "secondary-fixed": "#c6ecc6",
+                        "on-primary-fixed": "#001d36",
+                        "surface": "#fdf9f1",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#ece8e0",
+                        "surface-bright": "#fdf9f1",
+                        "inverse-primary": "#a0cafe",
+                        "tertiary-fixed-dim": "#f8ba83",
+                        "on-primary-container": "#aed1ff",
+                        "tertiary-container": "#7b4d20",
+                        "secondary-container": "#c3e9c3",
+                        "on-surface-variant": "#42474f",
+                        "on-background": "#1c1c17",
+                        "secondary": "#456648",
+                        "outline-variant": "#c2c7d0",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "primary": "#0f426f",
+                        "tertiary": "#5f360b",
+                        "on-secondary-fixed-variant": "#2d4e32",
+                        "inverse-surface": "#31302c",
+                        "primary-fixed-dim": "#a0cafe",
+                        "on-tertiary-fixed-variant": "#673d11",
+                        "on-primary-fixed-variant": "#194976"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Public Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background text-on-surface flex overflow-hidden selection:bg-primary-container selection:text-on-primary-container">
+    <!-- SideNavBar (Shared Component) -->
+    <nav class="h-screen w-64 fixed left-0 border-r-0 bg-stone-50 dark:bg-stone-950 flex flex-col p-4 gap-2 z-50">
+        <!-- Header -->
+        <div class="px-4 py-6 mb-4 flex items-center gap-4 bg-stone-100 dark:bg-stone-900 rounded-2xl flat no-border">
+            <img alt="User Profile Avatar" class="w-12 h-12 rounded-full object-cover"
+                data-alt="portrait of a calm professional woman with warm lighting and soft background"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-nhqPZ3oIZYxhAgexmtgxeT5F8WHtKhbe-N4H_2zM7jDiJCeGhYycxNqKa_UO7WnQrUfZPVIh2i1oQC490zq6NuAPkog4AIXKzZV3nQoOQajUJ67VIofPEshBhqHcgSDX_e_HqucOwCXkckU0QuxWCXIdCUl4xO1D68ZzEHGwkaHzNGkyT6sqwMmubDq9do-MLJYCFwgC8uNApYkvkFQxBOt2C2npnJOs1S1lXNsgJjjlrEhkXUAzFbDrbBVQ5CsldZFUXaWPzyW5" />
+            <div>
+                <h1 class="text-xl font-black text-blue-900 dark:text-blue-400 font-headline tracking-tight">Sanad
+                    Portal</h1>
+                <p class="text-xs text-stone-500 font-medium">Editorial Sanctuary</p>
+            </div>
+        </div>
+        <!-- Navigation Links -->
+        <div class="flex flex-col gap-1 flex-1">
+            <!-- Active Tab: Dashboard -->
+            <a class="flex items-center gap-3 bg-white dark:bg-stone-800 text-blue-900 dark:text-blue-200 rounded-xl px-4 py-3 shadow-sm translate-x-1 transition-transform"
+                href="#">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+                <span class="text-sm font-semibold">Dashboard</span>
+            </a>
+            <!-- Inactive Tabs -->
+            <a class="flex items-center gap-3 text-stone-500 dark:text-stone-400 px-4 py-3 hover:bg-stone-200 dark:hover:bg-stone-800 rounded-xl transition-all hover:text-blue-800 dark:hover:text-blue-200 duration-300"
+                href="#">
+                <span class="material-symbols-outlined">calendar_today</span>
+                <span class="text-sm font-medium">Bookings</span>
+            </a>
+            <a class="flex items-center gap-3 text-stone-500 dark:text-stone-400 px-4 py-3 hover:bg-stone-200 dark:hover:bg-stone-800 rounded-xl transition-all hover:text-blue-800 dark:hover:text-blue-200 duration-300"
+                href="#">
+                <span class="material-symbols-outlined">account_balance_wallet</span>
+                <span class="text-sm font-medium">Wallet</span>
+            </a>
+            <a class="flex items-center gap-3 text-stone-500 dark:text-stone-400 px-4 py-3 hover:bg-stone-200 dark:hover:bg-stone-800 rounded-xl transition-all hover:text-blue-800 dark:hover:text-blue-200 duration-300"
+                href="#">
+                <span class="material-symbols-outlined">chat_bubble</span>
+                <span class="text-sm font-medium">Messages</span>
+            </a>
+            <a class="flex items-center gap-3 text-stone-500 dark:text-stone-400 px-4 py-3 hover:bg-stone-200 dark:hover:bg-stone-800 rounded-xl transition-all hover:text-blue-800 dark:hover:text-blue-200 duration-300"
+                href="#">
+                <span class="material-symbols-outlined">verified_user</span>
+                <span class="text-sm font-medium">ID Verification</span>
+            </a>
+        </div>
+        <!-- CTA -->
+        <div class="mt-auto pt-4">
+            <button
+                class="w-full py-3 px-4 rounded-xl bg-stone-200 dark:bg-stone-800 text-stone-700 dark:text-stone-300 text-sm font-semibold hover:bg-stone-300 transition-colors flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-[18px]">help_outline</span>
+                Need Help?
+            </button>
+        </div>
+    </nav>
+    <!-- Main Content Canvas -->
+    <main class="flex-1 ml-64 overflow-x-hidden px-10 py-12 relative">
+        <!-- Background Ambient Element (Editorial touch) -->
+        <div
+            class="absolute top-0 right-0 w-96 h-96 bg-surface-container-highest/50 rounded-full blur-3xl -z-10 -translate-y-1/2 translate-x-1/4 pointer-events-none">
+        </div>
+        <header class="mb-12 max-w-5xl mx-auto flex justify-between items-end">
+            <div>
+                <h2 class="font-headline text-4xl text-primary font-bold tracking-tight mb-2">Good morning, Eleanor.
+                </h2>
+                <p class="text-on-surface-variant font-medium text-lg max-w-md leading-relaxed">Here is a summary of
+                    your ongoing care connections and upcoming schedules.</p>
+            </div>
+            <!-- Quick Actions Top Right -->
+            <div class="flex gap-4">
+                <button
+                    class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface hover:bg-surface-dim transition-colors ambient-shadow">
+                    <span class="material-symbols-outlined">notifications</span>
+                </button>
+            </div>
+        </header>
+        <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- Left Column: Primary Focus -->
+            <div class="lg:col-span-8 flex flex-col gap-10">
+                <!-- Active Bookings (Bento Grid Style) -->
+                <section>
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="font-headline text-2xl text-primary font-semibold tracking-tight">Active Connections
+                        </h3>
+                        <a class="text-sm font-semibold text-primary hover:text-primary-container flex items-center gap-1 transition-colors"
+                            href="#">
+                            View All <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Caregiver Card 1 -->
+                        <div
+                            class="bg-surface-container-low rounded-2xl p-6 relative pt-12 mt-6 transition-transform hover:-translate-y-1 duration-300 ambient-shadow">
+                            <img alt="Caregiver Portrait"
+                                class="absolute -top-8 left-6 w-16 h-16 rounded-full object-cover shadow-sm border-4 border-surface-container-low"
+                                data-alt="portrait of an experienced female caregiver smiling warmly in a bright modern room"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5vO3g7KbfCjoiSqwhxcydskxU9eJjnwPTzv06YWUU7e3ur047i8sTUPG5FfjxDjpr3ZoXcFUTy4PJiw28laFge-HXF3QYKmQnxiuTTys3PW5tNxE_qgvZr7BPQR-vR1k1V2dVNpCeRBdNXGi_VAHbsUnI2E306Ukatu2omqou1c78RE_SHSfmVLRLNsfqEmrWH93XMTn6i6XdTFoEUQfXHBC8Ncutt6J4wa_9rSbwRvcMu-S7_xDfoJj8THCA6nTaMtUx78mnGNZz" />
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="font-headline text-xl font-bold text-primary mb-1">Dr. Amina R.</h4>
+                                    <p class="text-sm text-on-surface-variant font-medium">Post-Op Recovery Care</p>
+                                </div>
+                                <span
+                                    class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">Ongoing</span>
+                            </div>
+                            <div class="bg-surface rounded-xl p-4 flex items-center gap-4 mb-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+                                    <span class="material-symbols-outlined">schedule</span>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-on-surface">Today, 2:00 PM</p>
+                                    <p class="text-xs text-on-surface-variant">4 hours remaining</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <button
+                                    class="flex-1 py-2.5 rounded-full bg-surface-container-highest text-on-surface text-sm font-semibold hover:bg-surface-dim transition-colors">Message</button>
+                                <button
+                                    class="flex-1 py-2.5 rounded-full bg-gradient-to-tr from-primary to-primary-container text-on-primary text-sm font-semibold shadow-sm hover:opacity-90 transition-opacity">Details</button>
+                            </div>
+                        </div>
+                        <!-- Caregiver Card 2 -->
+                        <div
+                            class="bg-surface-container-low rounded-2xl p-6 relative pt-12 mt-6 transition-transform hover:-translate-y-1 duration-300 ambient-shadow">
+                            <img alt="Caregiver Portrait"
+                                class="absolute -top-8 left-6 w-16 h-16 rounded-full object-cover shadow-sm border-4 border-surface-container-low"
+                                data-alt="portrait of a male physical therapist in scrubs smiling with a soft blurred background"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRDc_PdgiMcUo-KRGeatY1rtIi2XiIXMRnBK-7UmrVPGuhkHN0ukFQ-29OBlnXXYTgBFDmzNqUUIDYP_QpD23uQhSOQkrifgud0tIs0oxakCORO144SwYRMQExgtbzSnYCuOa8yqMRFLT6w6D67EsMcz4PVgPki2HqOjPhoZT_hg0PqYLCT_5rPN9KRLtMoWmHiBzsA7EycUI4hiuw-WIcC23usd0YU9LdP4xamuRdaA2UNiCVaVWI9_5bqeCx-aajFx9XOW4PRNRs" />
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h4 class="font-headline text-xl font-bold text-primary mb-1">Tariq M.</h4>
+                                    <p class="text-sm text-on-surface-variant font-medium">Physical Therapy</p>
+                                </div>
+                                <span
+                                    class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">Booking
+                                    Soon</span>
+                            </div>
+                            <div class="bg-surface rounded-xl p-4 flex items-center gap-4 mb-4">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant">
+                                    <span class="material-symbols-outlined">event</span>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-on-surface">Tomorrow, 10:00 AM</p>
+                                    <p class="text-xs text-on-surface-variant">2 hour session</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3">
+                                <button
+                                    class="flex-1 py-2.5 rounded-full bg-surface-container-highest text-on-surface text-sm font-semibold hover:bg-surface-dim transition-colors">Message</button>
+                                <button
+                                    class="flex-1 py-2.5 rounded-full bg-gradient-to-tr from-primary to-primary-container text-on-primary text-sm font-semibold shadow-sm hover:opacity-90 transition-opacity">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Find Caregivers (Editorial Search Area) -->
+                <section class="bg-surface-container-lowest rounded-3xl p-8 ambient-shadow mt-4">
+                    <div class="max-w-2xl">
+                        <h3 class="font-headline text-2xl text-primary font-bold tracking-tight mb-2">Find your next
+                            specialist</h3>
+                        <p class="text-on-surface-variant text-sm mb-8">Search our curated network of certified
+                            professionals.</p>
+                        <div class="flex flex-col gap-4">
+                            <!-- Input Field based on Design System -->
+                            <div class="relative group">
+                                <span
+                                    class="material-symbols-outlined absolute left-0 top-3 text-outline-variant group-focus-within:text-primary transition-colors">search</span>
+                                <input
+                                    class="w-full bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:bg-surface-container-low transition-all py-3 pl-10 pr-4 text-on-surface outline-none placeholder:text-outline"
+                                    placeholder="Search by specialty, name, or condition..." type="text" />
+                            </div>
+                            <div class="flex gap-3 flex-wrap mt-2">
+                                <button
+                                    class="px-4 py-2 rounded-full border border-outline-variant text-sm font-medium text-on-surface hover:bg-surface-container-low transition-colors flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-[18px]">filter_list</span> Filters
+                                </button>
+                                <span
+                                    class="px-4 py-2 rounded-full bg-surface-container-high text-sm font-medium text-on-surface cursor-pointer hover:bg-surface-dim transition-colors">Eldercare</span>
+                                <span
+                                    class="px-4 py-2 rounded-full bg-surface-container-high text-sm font-medium text-on-surface cursor-pointer hover:bg-surface-dim transition-colors">Pediatric</span>
+                                <span
+                                    class="px-4 py-2 rounded-full bg-surface-container-high text-sm font-medium text-on-surface cursor-pointer hover:bg-surface-dim transition-colors">Top
+                                    Rated</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Right Column: Contextual & Utility -->
+            <div class="lg:col-span-4 flex flex-col gap-8">
+                <!-- The Wallet Interface: Secure & Serene -->
+                <section
+                    class="bg-primary rounded-3xl p-8 relative overflow-hidden text-on-primary shadow-xl shadow-primary/10">
+                    <!-- Glassmorphism overlay -->
+                    <div class="absolute inset-0 bg-surface-tint/10 backdrop-blur-md pointer-events-none"></div>
+                    <!-- Decorative abstract shape -->
+                    <div
+                        class="absolute -bottom-10 -right-10 w-48 h-48 bg-primary-container rounded-full blur-2xl opacity-50 pointer-events-none">
+                    </div>
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="flex justify-between items-center mb-8">
+                            <h3 class="font-body text-sm font-medium tracking-widest uppercase opacity-80">Available
+                                Balance</h3>
+                            <span class="material-symbols-outlined opacity-80">account_balance_wallet</span>
+                        </div>
+                        <div class="mb-10">
+                            <span class="text-lg opacity-80 align-top mr-1">AED</span>
+                            <span class="font-headline text-5xl font-light tracking-tighter">4,250</span>
+                            <span class="text-lg opacity-80">.00</span>
+                        </div>
+                        <div class="flex gap-4 mt-auto">
+                            <button
+                                class="flex-1 py-3 rounded-full bg-surface text-primary text-sm font-bold shadow-sm hover:bg-surface-container-lowest transition-colors flex justify-center items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">add</span> Deposit
+                            </button>
+                            <button
+                                class="flex-1 py-3 rounded-full bg-transparent border border-surface/30 text-on-primary text-sm font-bold hover:bg-surface/10 transition-colors flex justify-center items-center gap-2">
+                                <span class="material-symbols-outlined text-[18px]">arrow_downward</span> Withdraw
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- Recent Activity (Timeline List without hard borders) -->
+                <section class="bg-surface-container-lowest rounded-3xl p-8 ambient-shadow flex-1">
+                    <h3 class="font-headline text-xl text-primary font-bold tracking-tight mb-8">Recent Activity</h3>
+                    <div class="flex flex-col gap-6 relative">
+                        <!-- Connecting line implied by spacing, no hard 1px line as per rules -->
+                        <!-- Activity Item 1 -->
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0 mt-1">
+                                <span class="material-symbols-outlined">payments</span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-on-surface mb-1">Payment Processed</p>
+                                <p class="text-sm text-on-surface-variant leading-relaxed">AED 450 deducted for session
+                                    with Dr. Amina R.</p>
+                                <p class="text-xs text-outline font-medium mt-2">Today, 9:45 AM</p>
+                            </div>
+                        </div>
+                        <!-- Activity Item 2 -->
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0 mt-1">
+                                <span class="material-symbols-outlined">star</span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-on-surface mb-1">Service Rated</p>
+                                <p class="text-sm text-on-surface-variant leading-relaxed">You rated your last session
+                                    with Tariq M. 5 stars.</p>
+                                <p class="text-xs text-outline font-medium mt-2">Yesterday, 4:20 PM</p>
+                            </div>
+                        </div>
+                        <!-- Activity Item 3 -->
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0 mt-1">
+                                <span class="material-symbols-outlined">account_balance</span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-on-surface mb-1">Wallet Top-up</p>
+                                <p class="text-sm text-on-surface-variant leading-relaxed">AED 2,000 added from ending
+                                    card **4892.</p>
+                                <p class="text-xs text-outline font-medium mt-2">Oct 12, 11:00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="w-full mt-8 py-3 rounded-xl bg-surface-container-highest text-primary text-sm font-semibold hover:bg-surface-dim transition-colors">
+                        View Full History
+                    </button>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

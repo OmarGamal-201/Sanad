@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sanad | Caregiver Services</title>
+    <!-- Fonts: Manrope for Headlines, Public Sans for Body -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f1ede6",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#abd0ab",
+                        "inverse-primary": "#a0cafe",
+                        "on-surface-variant": "#42474f",
+                        "on-secondary-fixed-variant": "#2d4e32",
+                        "surface-tint": "#35618f",
+                        "primary-fixed-dim": "#a0cafe",
+                        "outline": "#737780",
+                        "tertiary-fixed-dim": "#f8ba83",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#2e1500",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f7f3ec",
+                        "surface-container-high": "#ece8e0",
+                        "outline-variant": "#c2c7d0",
+                        "surface-container-highest": "#e6e2db",
+                        "background": "#fdf9f1",
+                        "tertiary-fixed": "#ffdcc1",
+                        "on-primary-fixed": "#001d36",
+                        "primary-fixed": "#d2e4ff",
+                        "on-tertiary-container": "#ffc28d",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e6e2db",
+                        "inverse-surface": "#31302c",
+                        "surface-dim": "#dddad2",
+                        "secondary-container": "#c3e9c3",
+                        "surface-bright": "#fdf9f1",
+                        "on-secondary-fixed": "#01210a",
+                        "on-background": "#1c1c17",
+                        "surface": "#fdf9f1",
+                        "on-surface": "#1c1c17",
+                        "on-primary-fixed-variant": "#194976",
+                        "primary-container": "#2e5a88",
+                        "on-secondary-container": "#496a4c",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#c6ecc6",
+                        "inverse-on-surface": "#f4f0e9",
+                        "error-container": "#ffdad6",
+                        "secondary": "#456648",
+                        "primary": "#0f426f",
+                        "tertiary-container": "#7b4d20",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#5f360b",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#aed1ff",
+                        "on-tertiary-fixed-variant": "#673d11"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body
+    class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+
+    <main class="max-w-7xl mx-auto px-6 pt-5 pb-12 min-h-screen">
+        <div class="flex flex-col lg:flex-row gap-12">
+            <!-- SideNavBar / Filter Column -->
+            <aside class="hidden lg:flex flex-col py-8 pr-4 w-72 space-y-8 h-fit sticky top-32">
+                <div>
+                    <h2 class="font-headline text-[#0f426f] font-black text-xl mb-1">Service Categories</h2>
+                    <p class="text-on-surface-variant text-sm font-light italic">Find your sanctuary</p>
+                </div>
+                <nav class="flex flex-col space-y-2">
+                    <a class="flex items-center gap-3 py-3 px-4 bg-[#2e5a88]/10 text-[#0f426f] rounded-r-full font-headline font-bold transition-all duration-300 hover:pl-2"
+                        href="#">
+                        <span class="material-symbols-outlined" data-icon="elderly">elderly</span>
+                        <span>Elderly Care</span>
+                    </a>
+                    <a class="flex items-center gap-3 py-3 px-4 text-stone-600 hover:bg-stone-100 rounded-r-full font-headline font-semibold transition-all duration-300 hover:pl-2"
+                        href="#">
+                        <span class="material-symbols-outlined" data-icon="child_care">child_care</span>
+                        <span>Babysitting</span>
+                    </a>
+                    <a class="flex items-center gap-3 py-3 px-4 text-stone-600 hover:bg-stone-100 rounded-r-full font-headline font-semibold transition-all duration-300 hover:pl-2"
+                        href="#">
+                        <span class="material-symbols-outlined" data-icon="accessibility_new">accessibility_new</span>
+                        <span>Special Needs</span>
+                    </a>
+                    <a class="flex items-center gap-3 py-3 px-4 text-stone-600 hover:bg-stone-100 rounded-r-full font-headline font-semibold transition-all duration-300 hover:pl-2"
+                        href="#">
+                        <span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+                        <span>Nursing</span>
+                    </a>
+                    <a class="flex items-center gap-3 py-3 px-4 text-stone-600 hover:bg-stone-100 rounded-r-full font-headline font-semibold transition-all duration-300 hover:pl-2"
+                        href="#">
+                        <span class="material-symbols-outlined" data-icon="fitness_center">fitness_center</span>
+                        <span>Physiotherapy</span>
+                    </a>
+                </nav>
+                <div class="h-[1px] bg-[#e6e2db] w-full"></div>
+                <!-- Functional Filters -->
+                <div class="space-y-6">
+                    <div class="bg-surface-container-low rounded-xl p-6 space-y-4">
+                        <label class="font-headline font-bold text-sm text-[#0f426f] uppercase tracking-widest">Price
+                            Range</label>
+                        <input
+                            class="w-full accent-primary h-1 bg-surface-container-highest rounded-full appearance-none cursor-pointer"
+                            type="range" />
+                        <div class="flex justify-between text-xs font-semibold text-stone-500">
+                            <span>50 AED/hr</span>
+                            <span>500 AED/hr</span>
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-low rounded-xl p-6 space-y-4">
+                        <label
+                            class="font-headline font-bold text-sm text-[#0f426f] uppercase tracking-widest">Rating</label>
+                        <div class="space-y-2">
+                            <label class="flex items-center gap-3 cursor-pointer group">
+                                <input class="rounded border-outline-variant text-primary focus:ring-primary"
+                                    type="checkbox" />
+                                <div class="flex text-[#f8ba83]">
+                                    <span class="material-symbols-outlined text-sm active-icon"
+                                        style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-sm active-icon"
+                                        style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-sm active-icon"
+                                        style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-sm active-icon"
+                                        style="font-variation-settings: 'FILL' 1;">star</span>
+                                    <span class="material-symbols-outlined text-sm"
+                                        style="font-variation-settings: 'FILL' 0;">star</span>
+                                </div>
+                                <span
+                                    class="text-xs font-medium text-stone-600 group-hover:text-primary transition-colors">4+
+                                    Stars</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!-- Content Column -->
+            <section class="flex-1">
+                <header class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                    <div>
+                        <h1 class="font-headline text-4xl font-extrabold text-[#0f426f] tracking-tight mb-2">Available
+                            Caregivers</h1>
+                        <p class="text-on-surface-variant max-w-lg font-light leading-relaxed">Trusted professionals
+                            ready to provide compassionate care and support for your loved ones in the comfort of your
+                            home.</p>
+                    </div>
+                    <div
+                        class="flex items-center gap-3 bg-surface-container-high px-4 py-2 rounded-full border border-outline-variant/10">
+                        <span class="text-xs font-bold text-stone-500 uppercase tracking-widest">Sort by:</span>
+                        <select
+                            class="bg-transparent border-none text-sm font-bold text-[#0f426f] focus:ring-0 cursor-pointer">
+                            <option>Rating (Highest)</option>
+                            <option>Price (Low to High)</option>
+                            <option>Experience</option>
+                        </select>
+                    </div>
+                </header>
+                <!-- Grid of Caregiver Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="group bg-surface-container-low rounded-[2rem] p-6 relative overflow-hidden transition-all duration-500 hover:shadow-[0_24px_48px_rgba(15,66,111,0.08)] hover:-translate-y-1">
+                        <div class="flex gap-6 items-start relative z-10">
+                            <div class="relative w-32 h-40 shrink-0">
+                                <img alt="Caregiver Photo"
+                                    class="w-full h-full object-cover rounded-2xl shadow-lg -mt-8 transition-transform duration-500 group-hover:scale-105"
+                                    data-alt="warm portrait of a smiling middle-aged woman with kind eyes wearing a professional uniform in a brightly lit room"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFSSI8sYqa8H5TbS6Cg7yYiMoMejTMBJ0oBPKoStfzxJPDrTYZSF97JvWjd5AETh15n21h8gU3tWJU27axImifsnbV_DqN3Pv6F0a_16cDdmx6xscxyLGFB4QH1mvBFXmyTs7W7UUkTkywCokrAaBCsAkQiR3-KcFWVbRas71YYvE3l7-m9fiYAtVceAdHHIMfZEFJG-edsvYbnxdeg_WpY3DO7KafP_Nx3pb9xNpuwGmfSNgD0l0DoUBOn6b5RNkTybIuCXFOwT6i" />
+                                <div
+                                    class="absolute -bottom-2 -right-2 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-tighter flex items-center gap-1 shadow-sm">
+                                    <span class="material-symbols-outlined text-[12px] active-icon"
+                                        style="font-variation-settings: 'FILL' 1;">verified</span>
+                                    Verified
+                                </div>
+                            </div>
+                            <div class="flex-1 space-y-3">
+                                <div class="flex justify-between items-start">
+                                    <span
+                                        class="bg-primary-fixed text-on-primary-fixed-variant text-[10px] px-2 py-1 rounded-md font-bold uppercase">Elderly
+                                        Care</span>
+                                    <div class="flex items-center gap-1 text-[#f8ba83]">
+                                        <span class="material-symbols-outlined text-sm active-icon"
+                                            style="font-variation-settings: 'FILL' 1;">star</span>
+                                        <span class="text-sm font-bold text-[#0f426f]">4.9</span>
+                                    </div>
+                                </div>
+                                <h3 class="font-headline text-xl font-extrabold text-[#0f426f]">Sarah Al-Mansoori</h3>
+                                <p class="text-sm text-stone-600 line-clamp-2 leading-relaxed italic">"Dedicated
+                                    professional with 8+ years experience in specialized dementia and elderly companion
+                                    care."</p>
+                                <div class="flex items-end justify-between pt-2">
+                                    <div>
+                                        <span class="text-2xl font-black text-[#0f426f]">150</span>
+                                        <span class="text-xs font-bold text-stone-500 uppercase ml-1">AED/hr</span>
+                                    </div>
+                                    <button
+                                        class="bg-primary hover:bg-primary-container text-white px-6 py-3 rounded-full font-headline font-bold text-sm transition-all active:scale-95">View
+                                        Profile</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="group bg-surface-container-low rounded-[2rem] p-6 relative overflow-hidden transition-all duration-500 hover:shadow-[0_24px_48px_rgba(15,66,111,0.08)] hover:-translate-y-1">
+                        <div class="flex gap-6 items-start relative z-10">
+                            <div class="relative w-32 h-40 shrink-0">
+                                <img alt="Caregiver Photo"
+                                    class="w-full h-full object-cover rounded-2xl shadow-lg -mt-8 transition-transform duration-500 group-hover:scale-105"
+                                    data-alt="portrait of a confident male caregiver with a friendly smile, clean cut and professional look"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoWPFlUwTQq2IMKP2yGSQVIl2rp0M_zKDKctSBX8txR4D8bHEY1yT-e_e7fBY8Ym4lNiKpLPcDUttG9Il_jaPJtaHLqbEZSuKKZQyvfGCMPPE70OQW1Xj7dh0HRapwNk16EjABlHon20muHY36Qzrf8o7XXshGi-k011YCLVP8O4sWfYAxmmevXzk6cPtoJBc2uBu8Fu2LTNhTl_6bEocg50WXXlf3D34RF7FfeDhJx03ejXQCP7lRU2LjJs-xEBaVF5Olgj-7coS8" />
+                                <div
+                                    class="absolute -bottom-2 -right-2 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-tighter flex items-center gap-1 shadow-sm">
+                                    <span class="material-symbols-outlined text-[12px] active-icon"
+                                        style="font-variation-settings: 'FILL' 1;">verified</span>
+                                    Verified
+                                </div>
+                            </div>
+                            <div class="flex-1 space-y-3">
+                                <div class="flex justify-between items-start">
+                                    <span
+                                        class="bg-tertiary-fixed text-on-tertiary-fixed-variant text-[10px] px-2 py-1 rounded-md font-bold uppercase">Physiotherapy</span>
+                                    <div class="flex items-center gap-1 text-[#f8ba83]">
+                                        <span class="material-symbols-outlined text-sm active-icon"
+                                            style="font-variation-settings: 'FILL' 1;">star</span>
+                                        <span class="text-sm font-bold text-[#0f426f]">5.0</span>
+                                    </div>
+                                </div>
+                                <h3 class="font-headline text-xl font-extrabold text-[#0f426f]">Dr. Ahmed Omar</h3>
+                                <p class="text-sm text-stone-600 line-clamp-2 leading-relaxed italic">"Licensed
+                                    physiotherapist specializing in post-surgery recovery and mobility training for
+                                    seniors."</p>
+                                <div class="flex items-end justify-between pt-2">
+                                    <div>
+                                        <span class="text-2xl font-black text-[#0f426f]">220</span>
+                                        <span class="text-xs font-bold text-stone-500 uppercase ml-1">AED/hr</span>
+                                    </div>
+                                    <button
+                                        class="bg-primary hover:bg-primary-container text-white px-6 py-3 rounded-full font-headline font-bold text-sm transition-all active:scale-95">View
+                                        Profile</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="group bg-surface-container-low rounded-[2rem] p-6 relative overflow-hidden transition-all duration-500 hover:shadow-[0_24px_48px_rgba(15,66,111,0.08)] hover:-translate-y-1">
+                        <div class="flex gap-6 items-start relative z-10">
+                            <div class="relative w-32 h-40 shrink-0">
+                                <img alt="Caregiver Photo"
+                                    class="w-full h-full object-cover rounded-2xl shadow-lg -mt-8 transition-transform duration-500 group-hover:scale-105"
+                                    data-alt="smiling young woman with a warm, caring look, sitting in a cozy modern living room environment"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuADSDYfAK72zHoHLBdWwVhxBtpKCxG_FhrVTscWuzbJJFbySekYAs-dpVZUwXf_oTiBWW797BPcRhdBxbMNKck8xvATd32Dt6AZ05uu0wnBafaXD8EUYH_aAfEieq4YvWR6wtbJvbZN3jl7KKZHuJOdWBR4pOPb15_Q9wuX1E0KZhGE0evGWTDqL212ObZWZP0iB-LGD1AfbqN8YRi1lfeIUJCLWej1MOUPR60pypnLKVr0-x1Hbml_P7kYfb0HhN8GxbOXh1MxrzQf" />
+                                <div
+                                    class="absolute -bottom-2 -right-2 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-tighter flex items-center gap-1 shadow-sm">
+                                    <span class="material-symbols-outlined text-[12px] active-icon"
+                                        style="font-variation-settings: 'FILL' 1;">verified</span>
+                                    Verified
+                                </div>
+                            </div>
+                            <div class="flex-1 space-y-3">
+                                <div class="flex justify-between items-start">
+                                    <span
+                                        class="bg-secondary-fixed text-on-secondary-fixed-variant text-[10px] px-2 py-1 rounded-md font-bold uppercase">Babysitting</span>
+                                    <div class="flex items-center gap-1 text-[#f8ba83]">
+                                        <span class="material-symbols-outlined text-sm active-icon"
+                                            style="font-variation-settings: 'FILL' 1;">star</span>
+                                        <span class="text-sm font-bold text-[#0f426f]">4.8</span>
+                                    </div>
+                                </div>
+                                <h3 class="font-headline text-xl font-extrabold text-[#0f426f]">Fatima Zahra</h3>
+                                <p class="text-sm text-stone-600 line-clamp-2 leading-relaxed italic">"Energetic child
+                                    care specialist with focus on early childhood development and educational play."</p>
+                                <div class="flex items-end justify-between pt-2">
+                                    <div>
+                                        <span class="text-2xl font-black text-[#0f426f]">95</span>
+                                        <span class="text-xs font-bold text-stone-500 uppercase ml-1">AED/hr</span>
+                                    </div>
+                                    <button
+                                        class="bg-primary hover:bg-primary-container text-white px-6 py-3 rounded-full font-headline font-bold text-sm transition-all active:scale-95">View
+                                        Profile</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div
+                        class="group bg-surface-container-low rounded-[2rem] p-6 relative overflow-hidden transition-all duration-500 hover:shadow-[0_24px_48px_rgba(15,66,111,0.08)] hover:-translate-y-1">
+                        <div class="flex gap-6 items-start relative z-10">
+                            <div class="relative w-32 h-40 shrink-0">
+                                <img alt="Caregiver Photo"
+                                    class="w-full h-full object-cover rounded-2xl shadow-lg -mt-8 transition-transform duration-500 group-hover:scale-105"
+                                    data-alt="middle-aged male caregiver with a calm and trustworthy demeanor in a soft natural light setting"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1xELrplzCFWr47cE5QpdKstWE7ShywXYghUfaNYW8WjHsjCY7yzJyU_kHDeTduXQulbhnZkL39P-tK2k0zf0syxoS5AHcmNVXMW_9s4_a4xYBaaDTwUcPUUporHrU0_VCyDiQR63zzw7_YpV2lk-MRNHWXyh5DXNFkb7MTyLgOm0sXv-e5dhfbeJ8AGyS4PmbAJLqC879n8JxEF3JLIrCvfmnafDN2ZzkewZ6rSuT3QlWkRhA4BYD1DPoZG18FIafU1WeZcqCFxhk" />
+                                <div
+                                    class="absolute -bottom-2 -right-2 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-tighter flex items-center gap-1 shadow-sm">
+                                    <span class="material-symbols-outlined text-[12px] active-icon"
+                                        style="font-variation-settings: 'FILL' 1;">verified</span>
+                                    Verified
+                                </div>
+                            </div>
+                            <div class="flex-1 space-y-3">
+                                <div class="flex justify-between items-start">
+                                    <span
+                                        class="bg-primary-fixed text-on-primary-fixed-variant text-[10px] px-2 py-1 rounded-md font-bold uppercase">Special
+                                        Needs</span>
+                                    <div class="flex items-center gap-1 text-[#f8ba83]">
+                                        <span class="material-symbols-outlined text-sm active-icon"
+                                            style="font-variation-settings: 'FILL' 1;">star</span>
+                                        <span class="text-sm font-bold text-[#0f426f]">4.9</span>
+                                    </div>
+                                </div>
+                                <h3 class="font-headline text-xl font-extrabold text-[#0f426f]">Khalid Ibrahim</h3>
+                                <p class="text-sm text-stone-600 line-clamp-2 leading-relaxed italic">"Specialized
+                                    behavioral therapist with 10 years experience working with autistic children and
+                                    adults."</p>
+                                <div class="flex items-end justify-between pt-2">
+                                    <div>
+                                        <span class="text-2xl font-black text-[#0f426f]">180</span>
+                                        <span class="text-xs font-bold text-stone-500 uppercase ml-1">AED/hr</span>
+                                    </div>
+                                    <button
+                                        class="bg-primary hover:bg-primary-container text-white px-6 py-3 rounded-full font-headline font-bold text-sm transition-all active:scale-95">View
+                                        Profile</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination/Load More (Editorial Style) -->
+                <div class="mt-16 flex justify-center">
+                    <button
+                        class="group flex items-center gap-4 py-4 px-12 bg-surface-container-highest text-[#0f426f] rounded-full font-headline font-extrabold tracking-tight transition-all hover:bg-primary hover:text-white">
+                        Discover More Professionals
+                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-2"
+                            data-icon="arrow_forward">arrow_forward</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- BottomNavBar (Mobile) -->
+    <nav
+        class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-end pb-safe px-4 h-20 bg-[#fcfaf7]/90 backdrop-blur-lg shadow-[0_-4px_24px_rgba(0,0,0,0.04)] rounded-t-[2rem]">
+        <a class="flex flex-col items-center justify-center text-stone-400 p-2 hover:bg-stone-100 transition-all active:scale-90 duration-200"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="home">home</span>
+            <span class="font-['Public_Sans'] text-[11px] font-semibold uppercase tracking-wider">Home</span>
+        </a>
+        <a class="flex flex-col items-center justify-center bg-[#0f426f] text-white rounded-full p-3 mb-2 shadow-lg active:scale-90 duration-200"
+            href="#">
+            <span class="material-symbols-outlined active-icon" data-icon="grid_view"
+                style="font-variation-settings: 'FILL' 1;">grid_view</span>
+            <span class="font-['Public_Sans'] text-[11px] font-semibold uppercase tracking-wider">Services</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-stone-400 p-2 hover:bg-stone-100 transition-all active:scale-90 duration-200"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="event_note">event_note</span>
+            <span class="font-['Public_Sans'] text-[11px] font-semibold uppercase tracking-wider">Bookings</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-stone-400 p-2 hover:bg-stone-100 transition-all active:scale-90 duration-200"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="person">person</span>
+            <span class="font-['Public_Sans'] text-[11px] font-semibold uppercase tracking-wider">Profile</span>
+        </a>
+    </nav>
+</body>
+
+</html>

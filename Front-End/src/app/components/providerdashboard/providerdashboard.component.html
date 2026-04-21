@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Sanad - Provider Dashboard</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "outline": "#737780",
+            "on-secondary-container": "#496a4c",
+            "on-tertiary-fixed": "#2e1500",
+            "on-secondary-fixed": "#01210a",
+            "on-tertiary-container": "#ffc28d",
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#abd0ab",
+            "surface-container-low": "#f7f3ec",
+            "surface-container-highest": "#e6e2db",
+            "surface-container": "#f1ede6",
+            "tertiary-fixed": "#ffdcc1",
+            "surface-tint": "#35618f",
+            "background": "#fdf9f1",
+            "error": "#ba1a1a",
+            "inverse-on-surface": "#f4f0e9",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#d2e4ff",
+            "primary-container": "#2e5a88",
+            "on-error": "#ffffff",
+            "on-surface": "#1c1c17",
+            "surface-variant": "#e6e2db",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#dddad2",
+            "secondary-fixed": "#c6ecc6",
+            "on-primary-fixed": "#001d36",
+            "surface": "#fdf9f1",
+            "on-primary": "#ffffff",
+            "surface-container-high": "#ece8e0",
+            "surface-bright": "#fdf9f1",
+            "inverse-primary": "#a0cafe",
+            "tertiary-fixed-dim": "#f8ba83",
+            "on-primary-container": "#aed1ff",
+            "tertiary-container": "#7b4d20",
+            "secondary-container": "#c3e9c3",
+            "on-surface-variant": "#42474f",
+            "on-background": "#1c1c17",
+            "secondary": "#456648",
+            "outline-variant": "#c2c7d0",
+            "error-container": "#ffdad6",
+            "on-secondary": "#ffffff",
+            "primary": "#0f426f",
+            "tertiary": "#5f360b",
+            "on-secondary-fixed-variant": "#2d4e32",
+            "inverse-surface": "#31302c",
+            "primary-fixed-dim": "#a0cafe",
+            "on-tertiary-fixed-variant": "#673d11",
+            "on-primary-fixed-variant": "#194976"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {},
+          "fontFamily": {
+            "headline": [
+              "Manrope", "sans-serif"
+            ],
+            "body": [
+              "Public Sans", "sans-serif"
+            ],
+            "label": [
+              "Public Sans", "sans-serif"
+            ]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+
+<body
+  class="bg-surface font-body text-on-surface flex overflow-hidden selection:bg-primary-container selection:text-on-primary-container">
+  <aside class="h-screen w-64 fixed left-0 border-r-0 bg-stone-50 flex flex-col p-4 gap-2 z-40">
+    <div class="px-4 py-6 mb-4">
+      <h1 class="text-xl font-black text-blue-900 font-headline tracking-tight">Sanad Portal</h1>
+      <p class="text-sm font-medium text-stone-500 font-body">Editorial Sanctuary</p>
+    </div>
+    <nav class="flex-1 flex flex-col gap-2">
+      <a class="flex items-center gap-3 bg-white text-blue-900 rounded-xl px-4 py-3 shadow-sm transition-transform translate-x-1"
+        href="#">
+        <span class="material-symbols-outlined text-blue-900"
+          style="font-variation-settings: 'FILL' 1;">grid_view</span>
+        <span class="text-sm font-semibold font-headline">Dashboard</span>
+      </a>
+      <a class="flex items-center gap-3 text-stone-500 px-4 py-3 hover:bg-stone-200 rounded-xl transition-all" href="#">
+        <span class="material-symbols-outlined">calendar_today</span>
+        <span class="text-sm font-medium font-body">Bookings</span>
+      </a>
+      <a class="flex items-center gap-3 text-stone-500 px-4 py-3 hover:bg-stone-200 rounded-xl transition-all" href="#">
+        <span class="material-symbols-outlined">account_balance_wallet</span>
+        <span class="text-sm font-medium font-body">Wallet</span>
+      </a>
+      <a class="flex items-center gap-3 text-stone-500 px-4 py-3 hover:bg-stone-200 rounded-xl transition-all" href="#">
+        <span class="material-symbols-outlined">chat_bubble</span>
+        <span class="text-sm font-medium font-body">Messages</span>
+      </a>
+      <a class="flex items-center gap-3 text-stone-500 px-4 py-3 hover:bg-stone-200 rounded-xl transition-all" href="#">
+        <span class="material-symbols-outlined">verified_user</span>
+        <span class="text-sm font-medium font-body">ID Verification</span>
+      </a>
+    </nav>
+    <div class="mt-auto">
+      <button
+        class="w-full flex items-center justify-center gap-2 bg-stone-100 text-blue-900 rounded-xl px-4 py-3 font-semibold text-sm hover:bg-stone-200 transition-all font-headline">
+        <span class="material-symbols-outlined">help</span>
+        Need Help?
+      </button>
+    </div>
+  </aside>
+  <main class="flex-1 ml-64 p-8 lg:p-12 overflow-y-auto w-full max-w-[1600px] mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
+      <div
+        class="lg:col-span-12 bg-surface-container-highest rounded-xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border border-outline-variant/15">
+        <div class="flex items-start sm:items-center gap-4">
+          <div class="p-3 bg-tertiary-fixed/40 rounded-full text-tertiary mt-1 sm:mt-0">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">privacy_tip</span>
+          </div>
+          <div>
+            <h3 class="font-headline font-semibold text-on-surface text-lg">ID Verification Pending</h3>
+            <p class="font-body text-on-surface-variant text-sm mt-1 max-w-xl">To ensure the safety of our
+              sanctuary, please complete your identity verification. Unverified profiles have limited
+              booking visibility.</p>
+          </div>
+        </div>
+        <button
+          class="whitespace-nowrap bg-primary text-on-primary rounded-full px-6 py-2.5 font-headline font-semibold text-sm hover:bg-primary-container transition-colors shadow-sm w-full sm:w-auto">Start
+          Verification</button>
+      </div>
+      <div
+        class="lg:col-span-4 bg-gradient-to-br from-primary to-primary-container rounded-2xl p-7 relative overflow-hidden text-on-primary shadow-[0_8px_32px_-8px_rgba(15,66,111,0.25)] flex flex-col justify-between min-h-[240px]">
+        <div class="absolute inset-0 bg-surface-tint opacity-10 pointer-events-none mix-blend-overlay"></div>
+        <div class="absolute -right-12 -top-12 w-48 h-48 bg-white opacity-5 rounded-full blur-2xl"></div>
+        <div class="relative z-10">
+          <div class="flex items-center justify-between mb-2">
+            <span class="font-body text-sm font-medium text-primary-fixed-dim uppercase tracking-wider">Available
+              Balance</span>
+            <span class="material-symbols-outlined text-primary-fixed-dim">account_balance_wallet</span>
+          </div>
+          <div class="font-headline text-5xl font-bold tracking-tighter mt-2">$1,240<span
+              class="text-2xl text-primary-fixed-dim">.00</span></div>
+        </div>
+        <div class="relative z-10 mt-8 pt-5 border-t border-white/20 flex justify-between items-center">
+          <div class="flex flex-col">
+            <span class="font-body text-xs text-primary-fixed-dim uppercase tracking-wider mb-1">Pending
+              Clearance</span>
+            <span class="font-headline text-xl font-semibold">$350.00</span>
+          </div>
+          <button
+            class="bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 transition-colors rounded-full px-4 py-2 font-body text-sm font-medium backdrop-blur-sm">Withdraw</button>
+        </div>
+      </div>
+      <div
+        class="lg:col-span-8 bg-surface-container-lowest rounded-2xl p-7 shadow-[0_8px_32px_-8px_rgba(28,28,23,0.04)] flex flex-col">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="font-headline font-semibold text-2xl text-primary tracking-tight">Incoming Requests</h3>
+          <a class="text-sm font-body font-medium text-primary hover:underline" href="#">View All</a>
+        </div>
+        <div class="flex flex-col gap-6 flex-1 justify-center">
+          <div
+            class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 rounded-xl bg-surface transition-colors hover:bg-surface-container-low">
+            <div class="flex items-center gap-4">
+              <img class="w-12 h-12 rounded-full object-cover shadow-sm"
+                data-alt="Portrait of a smiling older man with grey hair"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-HSaYuCKe0Z0J9iob4Y8Sdc6QNt517YJlkAGCqJK5KpIB2CU4bWfQd7S84vceDpySI5EqdGQ8LhRG8SMSzIyg1-8LFMWdgdnZ3X--svzSTZ-t3A4wnDIL50pK0hsNl5SQjvVorpvZi_YB8-PQJDjZgIZrGJimH6HqJ4DXtK_Gl-izGoNJhaNwbkcdpky-PS1Dlsm4OpL0H1RFOZ0lSCUb_NTDG5FaOq7fQzQVCXGU88ROiciBDQwk2oHOy8iFCjOG4re7rVEMk31h" />
+              <div>
+                <h4 class="font-headline font-bold text-on-surface text-lg">Robert Miller</h4>
+                <div class="flex items-center gap-2 mt-0.5">
+                  <span class="inline-block w-2 h-2 rounded-full bg-secondary-fixed"></span>
+                  <p class="font-body text-sm text-on-surface-variant font-medium">Companionship • 4
+                    hours • Tomorrow, 10:00 AM</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 w-full sm:w-auto">
+              <button
+                class="flex-1 sm:flex-none bg-surface-container-highest text-on-surface rounded-full px-5 py-2 font-headline font-semibold text-sm hover:bg-surface-dim transition-colors">Decline</button>
+              <button
+                class="flex-1 sm:flex-none bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-full px-5 py-2 font-headline font-semibold text-sm shadow-[0_4px_12px_-4px_rgba(15,66,111,0.3)] hover:opacity-90 transition-opacity">Accept</button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 rounded-xl bg-surface transition-colors hover:bg-surface-container-low">
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 rounded-full bg-surface-dim flex items-center justify-center text-on-surface-variant font-headline font-bold text-lg shadow-sm">
+                EJ
+              </div>
+              <div>
+                <h4 class="font-headline font-bold text-on-surface text-lg">Elena Jensen</h4>
+                <div class="flex items-center gap-2 mt-0.5">
+                  <span class="inline-block w-2 h-2 rounded-full bg-tertiary-fixed"></span>
+                  <p class="font-body text-sm text-on-surface-variant font-medium">Post-Op Care • 2
+                    hours • Fri, 2:30 PM</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 w-full sm:w-auto">
+              <button
+                class="flex-1 sm:flex-none bg-surface-container-highest text-on-surface rounded-full px-5 py-2 font-headline font-semibold text-sm hover:bg-surface-dim transition-colors">Decline</button>
+              <button
+                class="flex-1 sm:flex-none bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-full px-5 py-2 font-headline font-semibold text-sm shadow-[0_4px_12px_-4px_rgba(15,66,111,0.3)] hover:opacity-90 transition-opacity">Accept</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="lg:col-span-8 bg-surface-container-lowest rounded-2xl p-7 shadow-[0_8px_32px_-8px_rgba(28,28,23,0.04)]">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="font-headline font-semibold text-2xl text-primary tracking-tight">Upcoming Schedule</h3>
+          <div class="flex gap-2">
+            <button
+              class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors"><span
+                class="material-symbols-outlined text-sm">chevron_left</span></button>
+            <button
+              class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors"><span
+                class="material-symbols-outlined text-sm">chevron_right</span></button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div
+            class="bg-surface rounded-xl p-5 border border-outline-variant/10 relative overflow-hidden group hover:bg-surface-container-low transition-colors cursor-pointer">
+            <div class="absolute top-0 left-0 w-1 h-full bg-secondary-fixed"></div>
+            <span class="font-body text-xs font-bold text-secondary uppercase tracking-widest mb-2 block">Today</span>
+            <h4 class="font-headline font-bold text-on-surface text-xl">14:00 - 17:00</h4>
+            <p class="font-body text-sm text-on-surface-variant mt-1 font-medium">Elderly Care</p>
+            <p class="font-body text-xs text-on-surface-variant/70 mt-3 flex items-center gap-1"><span
+                class="material-symbols-outlined text-[14px]">location_on</span> Westside Clinic</p>
+          </div>
+          <div
+            class="bg-surface rounded-xl p-5 border border-outline-variant/10 relative overflow-hidden group hover:bg-surface-container-low transition-colors cursor-pointer">
+            <div class="absolute top-0 left-0 w-1 h-full bg-tertiary-fixed-dim"></div>
+            <span class="font-body text-xs font-bold text-tertiary uppercase tracking-widest mb-2 block">Tomorrow</span>
+            <h4 class="font-headline font-bold text-on-surface text-xl">09:00 - 11:00</h4>
+            <p class="font-body text-sm text-on-surface-variant mt-1 font-medium">Physiotherapy</p>
+            <p class="font-body text-xs text-on-surface-variant/70 mt-3 flex items-center gap-1"><span
+                class="material-symbols-outlined text-[14px]">home</span> Client Residence</p>
+          </div>
+          <div
+            class="bg-surface rounded-xl p-5 border border-outline-variant/10 flex flex-col items-center justify-center text-center group hover:bg-surface-container-low transition-colors cursor-pointer border-dashed border-2">
+            <span
+              class="material-symbols-outlined text-outline mb-2 group-hover:text-primary transition-colors">add_circle</span>
+            <span class="font-headline font-semibold text-on-surface text-sm">Open Slot</span>
+            <span class="font-body text-xs text-on-surface-variant mt-1">Tap to add availability</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="lg:col-span-4 bg-surface-container-lowest rounded-2xl p-7 shadow-[0_8px_32px_-8px_rgba(28,28,23,0.04)] flex flex-col gap-6">
+        <h3 class="font-headline font-semibold text-2xl text-primary tracking-tight">My Profile Details</h3>
+        <div
+          class="bg-surface rounded-xl p-5 border border-outline-variant/10 group focus-within:bg-surface-container-low transition-colors">
+          <label class="block font-body text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-2">Hourly
+            Rate</label>
+          <div
+            class="flex items-center justify-between border-b-2 border-outline-variant/30 pb-1 focus-within:border-primary transition-all">
+            <span class="text-on-surface font-headline font-bold text-2xl">$</span>
+            <input aria-label="Hourly Rate"
+              class="w-full bg-transparent border-none outline-none text-on-surface font-headline font-bold text-2xl text-right focus:ring-0 p-0"
+              type="number" value="45" />
+          </div>
+        </div>
+        <div
+          class="bg-surface rounded-xl p-5 border border-outline-variant/10 focus-within:bg-surface-container-low transition-colors flex-1 flex flex-col">
+          <label
+            class="block font-body text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-3">Service
+            Bio</label>
+          <textarea aria-label="Service Bio"
+            class="w-full bg-transparent border-none p-0 font-body text-sm text-on-surface leading-relaxed focus:ring-0 resize-none flex-1 min-h-[100px]">Registered nurse specializing in elderly care and post-operative recovery. Passionate about bringing a calm, healing presence to every client's home.</textarea>
+        </div>
+        <button
+          class="w-full bg-surface-container-highest text-on-surface rounded-full py-3 font-headline font-bold text-sm hover:bg-primary hover:text-on-primary transition-colors mt-auto"
+          type="submit">Save Changes</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #fdf9f1;
+            color: #1c1c17;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .font-headline {
+            font-family: 'Manrope', sans-serif;
+        }

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Sanad - Care with Compassion</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "outline": "#737780",
+            "on-secondary-container": "#496a4c",
+            "on-tertiary-fixed": "#2e1500",
+            "on-secondary-fixed": "#01210a",
+            "on-tertiary-container": "#ffc28d",
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#abd0ab",
+            "surface-container-low": "#f7f3ec",
+            "surface-container-highest": "#e6e2db",
+            "surface-container": "#f1ede6",
+            "tertiary-fixed": "#ffdcc1",
+            "surface-tint": "#35618f",
+            "background": "#fdf9f1",
+            "error": "#ba1a1a",
+            "inverse-on-surface": "#f4f0e9",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#d2e4ff",
+            "primary-container": "#2e5a88",
+            "on-error": "#ffffff",
+            "on-surface": "#1c1c17",
+            "surface-variant": "#e6e2db",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#dddad2",
+            "secondary-fixed": "#c6ecc6",
+            "on-primary-fixed": "#001d36",
+            "surface": "#fdf9f1",
+            "on-primary": "#ffffff",
+            "surface-container-high": "#ece8e0",
+            "surface-bright": "#fdf9f1",
+            "inverse-primary": "#a0cafe",
+            "tertiary-fixed-dim": "#f8ba83",
+            "on-primary-container": "#aed1ff",
+            "tertiary-container": "#7b4d20",
+            "secondary-container": "#c3e9c3",
+            "on-surface-variant": "#42474f",
+            "on-background": "#1c1c17",
+            "secondary": "#456648",
+            "outline-variant": "#c2c7d0",
+            "error-container": "#ffdad6",
+            "on-secondary": "#ffffff",
+            "primary": "#0f426f",
+            "tertiary": "#5f360b",
+            "on-secondary-fixed-variant": "#2d4e32",
+            "inverse-surface": "#31302c",
+            "primary-fixed-dim": "#a0cafe",
+            "on-tertiary-fixed-variant": "#673d11",
+            "on-primary-fixed-variant": "#194976"
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          },
+          fontFamily: {
+            headline: ["Manrope", "sans-serif"],
+            body: ["Public Sans", "sans-serif"],
+            label: ["Public Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen">
+
+  <main class="flex-grow">
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-32 px-6 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-surface/80 to-surface z-10"></div>
+        <img
+          alt="Caregiver smiling and assisting an elderly woman in a bright, modern living room with soft natural lighting, conveying trust and compassion."
+          class="w-full h-full object-cover"
+          data-alt="Caregiver smiling and assisting an elderly woman in a bright, modern living room with soft natural lighting, conveying trust and compassion."
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4956uEiq81LAMmC4R5K2XBFvXHR15et4fLaq_sctYyy8J5U4wkAu9UhBsJFv3sYJca7NFWVMqkIbZkiDDX1A5b4L4kP9JIjxIMQ5Sf56AHefi7R-Me9pS_3BgzhWtz2JNifnx5zb7pSUMGhZCVBUMs5Smmrbsfk61dO_LX5LfUJY5vBtrMTZvAMxeDM5a3HgUvQvBolHiCEDPgid1BcZ-XkF2wOTlRsxZYQ5YWKXD1SbkfZEbNmEDbrQyxJhxZwVqD1lfpwi20Iix" />
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2 space-y-8">
+          <span
+            class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label text-sm font-medium">Trusted
+            Care Network</span>
+          <h1 class="text-5xl md:text-6xl font-headline font-extrabold tracking-tight text-on-surface leading-tight">
+            Care with <span class="gradient-text">Compassion</span>
+          </h1>
+          <p class="text-lg text-on-surface-variant font-body max-w-lg leading-relaxed">
+            Book verified caregivers and babysitters in your area. Professional support when you need it most, delivered
+            with empathy and respect.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <button
+              class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-full font-label text-base font-semibold hover:opacity-90 transition-opacity ambient-shadow flex items-center justify-center gap-2">
+              Get Started <span class="material-symbols-outlined" style="font-size: 20px;">arrow_forward</span>
+            </button>
+            <button
+              class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-full font-label text-base font-semibold hover:bg-surface-variant transition-colors flex items-center justify-center gap-2">
+              How it Works
+            </button>
+          </div>
+        </div>
+        <div class="md:w-1/2 w-full mt-12 md:mt-0 relative">
+          <!-- Decorative Elements -->
+          <div class="absolute -top-6 -right-6 w-24 h-24 bg-tertiary-fixed rounded-full blur-2xl opacity-60"></div>
+          <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-primary-fixed rounded-full blur-3xl opacity-50"></div>
+          <div
+            class="glass-panel p-8 rounded-xl ambient-shadow border border-outline-variant/15 relative z-10 max-w-md ml-auto">
+            <h3 class="text-xl font-headline font-bold mb-6 text-primary">Find Support Today</h3>
+            <form class="space-y-4">
+              <div class="relative">
+                <span
+                  class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+                <input
+                  class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant rounded-t-md px-10 py-3 focus:ring-0 focus:border-primary focus:bg-surface transition-colors font-body text-sm text-on-surface placeholder-on-surface-variant"
+                  placeholder="What service do you need?" type="text" />
+              </div>
+              <div class="relative">
+                <span
+                  class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">location_on</span>
+                <input
+                  class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant rounded-t-md px-10 py-3 focus:ring-0 focus:border-primary focus:bg-surface transition-colors font-body text-sm text-on-surface placeholder-on-surface-variant"
+                  placeholder="Your location" type="text" />
+              </div>
+              <div class="pt-4">
+                <button
+                  class="w-full bg-primary text-on-primary py-3 rounded-full font-label font-semibold hover:bg-primary-container transition-colors">Search
+                  Caregivers</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="py-24 px-6 bg-surface-container-lowest">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-headline font-bold text-on-surface mb-4">Our Core Services</h2>
+          <p class="text-on-surface-variant font-body max-w-2xl mx-auto">Tailored support designed to bring peace of
+            mind to your family.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-surface-container-low rounded-xl p-8 hover:bg-surface-container transition-colors duration-300 group cursor-pointer border border-outline-variant/15 relative overflow-hidden">
+            <div
+              class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed/30 rounded-bl-full -z-10 group-hover:scale-110 transition-transform">
+            </div>
+            <div
+              class="w-14 h-14 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-on-primary" style="font-size: 28px;">elderly</span>
+            </div>
+            <h3 class="text-xl font-headline font-bold text-on-surface mb-3 group-hover:text-primary transition-colors">
+              Elderly Care</h3>
+            <p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6">Compassionate daily assistance,
+              medication management, and companionship for seniors needing support at home.</p>
+            <a class="inline-flex items-center text-primary font-label font-semibold text-sm hover:underline mt-auto"
+              href="#">Learn more <span class="material-symbols-outlined ml-1"
+                style="font-size: 16px;">arrow_forward</span></a>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-surface-container-low rounded-xl p-8 hover:bg-surface-container transition-colors duration-300 group cursor-pointer border border-outline-variant/15 relative overflow-hidden">
+            <div
+              class="absolute top-0 right-0 w-32 h-32 bg-tertiary-fixed/30 rounded-bl-full -z-10 group-hover:scale-110 transition-transform">
+            </div>
+            <div
+              class="w-14 h-14 bg-tertiary-container text-on-tertiary-container rounded-full flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-on-tertiary" style="font-size: 28px;">child_care</span>
+            </div>
+            <h3
+              class="text-xl font-headline font-bold text-on-surface mb-3 group-hover:text-tertiary transition-colors">
+              Babysitting</h3>
+            <p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6">Trusted, vetted sitters providing
+              engaging and safe environments for children of all ages.</p>
+            <a class="inline-flex items-center text-tertiary font-label font-semibold text-sm hover:underline mt-auto"
+              href="#">Learn more <span class="material-symbols-outlined ml-1"
+                style="font-size: 16px;">arrow_forward</span></a>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-surface-container-low rounded-xl p-8 hover:bg-surface-container transition-colors duration-300 group cursor-pointer border border-outline-variant/15 relative overflow-hidden">
+            <div
+              class="absolute top-0 right-0 w-32 h-32 bg-secondary-fixed/30 rounded-bl-full -z-10 group-hover:scale-110 transition-transform">
+            </div>
+            <div class="w-14 h-14 bg-secondary text-on-secondary rounded-full flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-on-secondary"
+                style="font-size: 28px;">accessible_forward</span>
+            </div>
+            <h3
+              class="text-xl font-headline font-bold text-on-surface mb-3 group-hover:text-secondary transition-colors">
+              Special Needs Support</h3>
+            <p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6">Specialized care plans designed by
+              experts to support individuals with unique cognitive or physical needs.</p>
+            <a class="inline-flex items-center text-secondary font-label font-semibold text-sm hover:underline mt-auto"
+              href="#">Learn more <span class="material-symbols-outlined ml-1"
+                style="font-size: 16px;">arrow_forward</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Trust Indicators Section -->
+    <section class="py-20 px-6 bg-surface">
+      <div class="max-w-7xl mx-auto">
+        <div class="glass-panel rounded-2xl p-10 md:p-16 border border-outline-variant/15 ambient-shadow">
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-outline-variant/20">
+            <div class="pt-8 md:pt-0 md:px-8 flex flex-col items-center">
+              <div
+                class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mb-6 text-on-secondary-container">
+                <span class="material-symbols-outlined" data-weight="fill" style="font-size: 32px;">verified_user</span>
+              </div>
+              <h4 class="text-lg font-headline font-bold text-on-surface mb-2">Verified IDs</h4>
+              <p class="text-on-surface-variant text-sm font-body">Rigorous background checks and identity verification
+                for every caregiver on our platform.</p>
+            </div>
+            <div class="pt-8 md:pt-0 md:px-8 flex flex-col items-center">
+              <div
+                class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-6 text-on-primary">
+                <span class="material-symbols-outlined" data-weight="fill"
+                  style="font-size: 32px;">account_balance_wallet</span>
+              </div>
+              <h4 class="text-lg font-headline font-bold text-on-surface mb-2">Secure Wallet Payments</h4>
+              <p class="text-on-surface-variant text-sm font-body">Hassle-free, encrypted transactions directly through
+                the Sanad app. No cash needed.</p>
+            </div>
+            <div class="pt-8 md:pt-0 md:px-8 flex flex-col items-center">
+              <div class="w-16 h-16 bg-tertiary-fixed rounded-full flex items-center justify-center mb-6 text-tertiary">
+                <span class="material-symbols-outlined" data-weight="fill" style="font-size: 32px;">star_rate</span>
+              </div>
+              <h4 class="text-lg font-headline font-bold text-on-surface mb-2">Rated Caregivers</h4>
+              <p class="text-on-surface-variant text-sm font-body">Transparent reviews and ratings from families like
+                yours ensure high-quality care.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+</body>
+
+</html>
